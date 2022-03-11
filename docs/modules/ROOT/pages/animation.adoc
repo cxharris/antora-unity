@@ -8,12 +8,5 @@ One place that has a good selection of animations is Adobe's *Mixamo* platform -
 == Mixamo
 When registered, you can log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu.
 
-[#img-mixamo-choose-characters]
-.Choosing Mixamo characters
-image::../images/miximo-choose-characters.png[Characters]
+image:miximo-choose-characters.png[]
 
-and
-
-[#img-mixamo-choose-animations]
-.Choosing Mixamo animsations
-image::../images/miximo-choose-animations.png[Animations]
