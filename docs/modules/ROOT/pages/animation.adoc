@@ -10,10 +10,10 @@ When registered, you can log into the Mixamo platform and choose either *Charact
 
 [#img-miximo-choose-characters]
 .Choosing Mixamo characters;
-image::../images/miximo-choose-characters.png[Choosing Mixamo characters]
+image::_images/miximo-choose-characters.png[Choosing Mixamo characters]
 
 and
 
 [#img-miximo-choose-animations]
 .Choosing Mixamo animations;
-image::../images/miximo-choose-animations.png[Choosing Mixamo animations]
+image::_images/miximo-choose-animations.png[Choosing Mixamo animations]
