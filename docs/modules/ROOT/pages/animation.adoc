@@ -1,0 +1,6 @@
+= Animation
+:navtitle: Animation
+
+In 2022, it is commonplace to be able to download existing animations and their movements (or captured motions) and import them into Unity for inclusion in an app.
+
+One place that has a good selection of animations is Adobe's *Mixamo* platform.
