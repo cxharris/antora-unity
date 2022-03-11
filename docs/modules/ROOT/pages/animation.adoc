@@ -1,6 +1,19 @@
 = Animation
 :navtitle: Animation
 
-In 2022, it is commonplace to be able to download existing animations and their movements (or captured motions) and import them into Unity for inclusion in an app.
+In 2022, it is commonplace to be able to download existing animations and their movements (or captured motions) and import them into Unity for inclusion in an application. This section explains the basics of Unity's animation system, and one way to incorporate assets developed externally. It should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
 
-One place that has a good selection of animations is Adobe's *Mixamo* platform.
+One place that has a good selection of animations is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are first-class abstractions in a Unity context, but are a little slippery initially for newcomers.
+
+== Mixamo
+When registered, you can log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu.
+
+[#img-mixamo-choose-characters]
+.Choosing Mixamo characters
+image::../images/miximo-choose-characters.png[Characters]
+
+and
+
+[#img-mixamo-choose-animations]
+.Choosing Mixamo animsations
+image::../images/miximo-choose-animations.png[Animations]
