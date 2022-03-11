@@ -2,3 +2,5 @@
 :navtitle: Unity
 
 Some selected documentation with reference to version *{page-component-display-version}* of Unity.
+
+There's a good chance a lot of this content is available through other channels and media, but I tend to prefer plodding through text-based tutorials at my own pace rather than trying to cope with too-fast or too-slow video presentations.
