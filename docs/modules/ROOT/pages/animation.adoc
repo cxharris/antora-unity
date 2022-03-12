@@ -7,15 +7,19 @@ Downloading existing animations and their movements (or captured motions) and im
 
 One place that has a good selection of animations is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, are first-class abstractions in a Unity context, and are a little slippery initially if you're new to all this.
 
-== Downloading models and animations from Mixamo
-When registered, you can log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu.
-
+== Downloading characters and animations from Mixamo
+. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu.
++
 [#img-mixamo-choose-characters]
 .Choosing Mixamo characters
 image::miximo-choose-characters.png[]
-
++
 and
-
++
 [#img-mixamo-choose-animations]
 .Choosing Mixamo animations
 image::miximo-choose-animations.png[]
+
+. Click on a thumbnail image and it pops up in the right-hand preview pane. 
++
+If you select a character, and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
