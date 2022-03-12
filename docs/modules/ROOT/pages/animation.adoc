@@ -70,4 +70,6 @@ image::walking-ybot.png[]
 .Downloaded ybot animations
 image::downloaded-ybot-animations.png[]
 +
+You made sure to check the *In Place* checkbox prior to downloading the _walking_ and _running_ animations.
++
 The next stage in this workflow is to import these assets into Unity.
