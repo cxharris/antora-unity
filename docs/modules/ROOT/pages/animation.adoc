@@ -5,10 +5,10 @@ Downloading existing animations and their movements (or captured motions) and im
 
 === Mixamo
 
-One place that has a good selection of animations is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, are first-class abstractions in a Unity context, and are a little slippery initially if you're new to all this.
+One place that has a good selection of useful assets is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, and are a little slippery initially if you're unfamiliar with them. They become more familiar with use.
 
 == Downloading characters and animations from Mixamo
-. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu.
+. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu. A search box below the menu allows you to search for characters or animations when you already know what they are called.
 +
 [#img-mixamo-choose-characters]
 .Choosing Mixamo characters
@@ -20,6 +20,10 @@ and
 .Choosing Mixamo animations
 image::miximo-choose-animations.png[]
 
-. Click on a thumbnail image and it pops up in the right-hand preview pane. 
+. On the *Characters* tab, search for *ybot* and click the relevant thumbnail when the search finishes - the _ybot_ pops up in the right-hand preview pane, where you can review and manipulate it.
 +
 If you select a character, and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
+
+. On the *Animations* tab, search for *idle* and select the thumbnail. There are several animations called *idle* - just choose one that appeals.
++
+Look carefully and you'll see that even an _idling_ animation contains movement.
