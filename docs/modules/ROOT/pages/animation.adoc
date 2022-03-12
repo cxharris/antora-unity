@@ -57,10 +57,10 @@ This process removes keyframes if Unity determines that two individual frames ar
 Press *DOWNLOAD* to download the idle animation to a known directory on your machine.
 
 . Repeat the above steps to download a _walking_ animation and a _running_ animation. 
-
++
 IMPORTANT: For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
- 
- This movement isn't necessarily wrong, it's just not what we need at the moment. 
++
+This movement isn't necessarily wrong, it's just not what we need at the moment. 
 + 
 [#img-walking-ybot]
 .Downloading a walking animation and the *In Place* checkbox
