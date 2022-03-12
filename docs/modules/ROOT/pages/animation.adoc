@@ -1,5 +1,5 @@
 = Animation
-:icons:
+:icons: font
 :navtitle: Animation
 
 Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate assets developed outside of Unity. Unity's animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
@@ -60,7 +60,7 @@ Press *DOWNLOAD* to download the idle animation to a known directory on your mac
 
  [IMPORTANT]
  ====
- IMPORTANT: For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
+ For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
  ====
  
  This movement isn't necessarily wrong, it's just not what we need at the moment. 
