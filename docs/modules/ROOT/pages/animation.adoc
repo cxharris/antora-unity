@@ -20,10 +20,51 @@ and
 .Choosing Mixamo animations
 image::miximo-choose-animations.png[]
 
-. On the *Characters* tab, search for *ybot* and click the relevant thumbnail when the search finishes - the _ybot_ pops up in the right-hand preview pane, where you can review and manipulate it.
+. On the *Characters* tab, search for *ybot* and click the relevant thumbnail when the search finishes - the _ybot_ pops up in the right-hand preview pane, where you can review and manipulate it. This action also sets *ybot* as the active character.
 +
 If you select a character, and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
 
 . On the *Animations* tab, search for *idle* and select the thumbnail. There are several animations called *idle* - just choose one that appeals.
 +
 Look carefully and you'll see that even an _idling_ animation contains movement.
++
+[#img-mixamo-idle-ybot]
+.Idle on ybot
+image::idle-ybot.png[]
+
+. Press *DOWNLOAD* and a modal dialog box pops up:
++
+[#img-mixamo-download-dialog]
+.The Mixamo download dialog
+image::mixamo-download-dialog.png[]
++
+Complete the dialog:
++
+** *Format*: FBX for Unity(.fbx)
++
+_.fbx_ files are often used in game development and animation and generally contain 3D models saved in the Autodesk Filmbox format.
+** *Skin*: With Skin
++
+By selecting *With Skin* we are including the 3D model with the file.
+** *Frames per Second*: 30
++ 
+All three offered values are acceptable because Unity's animation system uses _interpolation_, which essentially involves estimating animation values between frames. Choosing 30 offers a good compromise between fidelity and output file size.
+** *Keyframe Reduction*: None
++
+This process removes keyframes if Unity determines that two individual frames are not sufficiently different to warrant the overhead. This actually happens when Unity _imports_ assets, so the animation keyframes you see in Unity have already been reduced. For this exerecise we'll simply choose *None*.
++
+Press *DOWNLOAD* to download the walking animation to a known directory on your machine.
+
+. Repeat the above steps to download a _walking_ animation and a _running_ animation. Note that for animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading:
++ 
+[#img-walking-ybot]
+.Downloading a walking animation
+image::walking-ybot.png[]
+
+. You now have three ybot animations downloaded into a local folder:
++
+[#img-downloaded-ybot-animations]
+.Downloaded ybot animations
+image::downloaded-ybot-animations.png[]
++
+The next stage in this workflow is to import these assets into Unity.
