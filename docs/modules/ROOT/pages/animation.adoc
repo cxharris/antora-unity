@@ -53,13 +53,19 @@ All three offered values are acceptable because Unity's animation system uses _i
 +
 This process removes keyframes if Unity determines that two individual frames are not sufficiently different to warrant the overhead. This actually happens when Unity _imports_ assets, so the animation keyframes you see in Unity have already been reduced. For this exerecise we'll simply choose *None*.
 +
-Press *DOWNLOAD* to download the walking animation to a known directory on your machine.
+Press *DOWNLOAD* to download the idle animation to a known directory on your machine.
 
-. Repeat the above steps to download a _walking_ animation and a _running_ animation. Note that for animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading:
+. Repeat the above steps to download a _walking_ animation and a _running_ animation. 
++
+ IMPORTANT: For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
+ +
+ This movement isn't necessarily wrong, it's just not what we need at the moment. 
 + 
 [#img-walking-ybot]
 .Downloading a walking animation
 image::walking-ybot.png[]
++
+The *In Place* checkbox 
 
 . You now have three ybot animations downloaded into a local folder:
 +
