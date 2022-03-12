@@ -1,4 +1,5 @@
 = Animation
+:icons:
 :navtitle: Animation
 
 Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate assets developed outside of Unity. Unity's animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
