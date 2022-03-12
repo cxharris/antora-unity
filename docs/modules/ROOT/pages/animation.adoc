@@ -58,10 +58,7 @@ Press *DOWNLOAD* to download the idle animation to a known directory on your mac
 
 . Repeat the above steps to download a _walking_ animation and a _running_ animation. 
 
- [IMPORTANT]
- ====
- For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
- ====
+IMPORTANT: For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity.
  
  This movement isn't necessarily wrong, it's just not what we need at the moment. 
 + 
