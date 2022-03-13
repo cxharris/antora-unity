@@ -99,3 +99,10 @@ image::imported-animation-assets.png[]
 [#img-expanded-animation-contents]
 .Revealing the animation's included components
 image::expanded-animation-contents.png[]
++
+Without going into too much detail at this stage, it's clear that the model contains:
++
+** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions.
+** _Materials_: Alpha_Body_Material and Alpha_Joints_Material
+** _A rig_: mixamorig:Hips
+** An _Animation Clip_: Walking
