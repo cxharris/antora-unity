@@ -2,7 +2,7 @@
 :icons: font
 :navtitle: Animation
 
-Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate assets developed outside of Unity. Unity's animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
+Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate character and animation assets developed outside of Unity. Unity's native animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
 
 === Mixamo
 
@@ -23,7 +23,7 @@ image::miximo-choose-animations.png[]
 
 . On the *Characters* tab, search for *ybot* and click the relevant thumbnail when the search finishes - the _ybot_ pops up in the right-hand preview pane, where you can review and manipulate it. This action also sets *ybot* as the active character.
 +
-If you select a character, and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
+TIP: If you select a character - such as *ybot* - and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
 
 . On the *Animations* tab, search for *idle* and select the thumbnail. There are several animations called *idle* - just choose one that appeals.
 +
@@ -43,13 +43,13 @@ Complete the dialog:
 +
 ** *Format*: FBX for Unity(.fbx)
 +
-_.fbx_ files are often used in game development and animation and generally contain 3D models saved in the Autodesk Filmbox format.
+_.fbx_ files are often used in game development and animation and generally contain 3D models saved in the Autodesk Filmbox format. *FBX for Unity* is this same format with some Unity optimisations applied.
 ** *Skin*: With Skin
 +
 By selecting *With Skin* we are including the 3D model with the file.
 ** *Frames per Second*: 30
 + 
-All three offered values are acceptable because Unity's animation system uses _interpolation_, which essentially involves estimating animation values between frames. Choosing 30 offers a good compromise between fidelity and output file size.
+All three offered values are acceptable because Unity's animation system uses _interpolation_, which essentially involves estimating animation values between frames. Bear in mind that there's no magic - the higher the frame rate, the better the quality but the larger the file size. Choosing 30 offers a decent compromise between quality and output file size.
 ** *Keyframe Reduction*: None
 +
 This process removes keyframes if Unity determines that two individual frames are not sufficiently different to warrant the overhead. This actually happens when Unity _imports_ assets, so the animation keyframes you see in Unity have already been reduced. For this exerecise we'll simply choose *None*.
@@ -64,7 +64,7 @@ IMPORTANT: For animations that include movement over the ground - like walking a
 .Downloading a walking animation and the *In Place* checkbox
 image::walking-ybot.png[]
 
-. You now have three ybot animations downloaded into a local folder:
+. You now have three _ybot__ animations downloaded into a local folder:
 +
 [#img-downloaded-ybot-animations]
 .Downloaded ybot animations
@@ -73,3 +73,28 @@ image::downloaded-ybot-animations.png[]
 You made sure to check the *In Place* checkbox prior to downloading the _walking_ and _running_ animations.
 +
 The next stage in this workflow is to import these assets into Unity.
+
+== Importing downloaded Mixamo assets into Unity
+From here, we need to switch into Unity itself - I am using version *{page-component-display-version}* but I have checked that these basics work as far back as xxxxx.
+
+. Create a new 3D Unity project - I called mine *unity-animation*.
+. Create a plane by right-clicking in the hierarchy view and selecting *3D Object* > *Plane*. Scale the plane's transform to 10 in the X and Z directions.
++
+[#img-import-plane-scaled]
+.Changing the scale of the initial plane
+image::import-plane-scaled.png[]
+. Create a new folder called *Mixamo* in your *Assets* folder by right-clicking in your *Assets* folder panel, choosing *Create folder* and renaming it to *Mixamo*.
+. Double-click on the empty *Mixamo* folder icon to enter the empty *Assets* > *Mixamo* panel.
+. Import the downloaded assets into Unity by either:
++
+** For each asset, right-clicking in the *Assets* > *Mixamo* panel, choosing *Import New Asset* and following the navigation and prompts to select your asset.
+** Simply dragging and dropping the relevant files into the *Assets* > *Mixamo* panel from your computer's directory display - such as Windows Explorer.
++[#img-downloaded-ybot-animations]
+.Downloaded ybot animations
+image::downloaded-ybot-animations.png[]
++
+. Click the arrow on an animation icon to expand the animation and reveal its included components.
++
+[#img-expanded-animation-contents]
+.Revealing the animation's included components
+image::expanded-animation-contents.png[]
