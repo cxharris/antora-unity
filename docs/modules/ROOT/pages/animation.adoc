@@ -89,9 +89,10 @@ image::import-plane-scaled.png[]
 +
 ** For each asset, right-clicking in the *Assets* > *Mixamo* panel, choosing *Import New Asset* and following the navigation and prompts to select your asset.
 ** Simply dragging and dropping the relevant files into the *Assets* > *Mixamo* panel from your computer's directory display - such as Windows Explorer.
-+[#img-downloaded-ybot-animations]
-.Downloaded ybot animations
-image::downloaded-ybot-animations.png[]
++
+[#img-imported-animation-assets]
+.Imported ybot animations
+image::imported-animation-assets.png[]
 +
 . Click the arrow on an animation icon to expand the animation and reveal its included components.
 +
