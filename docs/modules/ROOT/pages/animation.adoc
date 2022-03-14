@@ -75,15 +75,11 @@ You made sure to check the *In Place* checkbox prior to downloading the _walking
 The next stage in this workflow is to import these assets into Unity.
 
 == Importing downloaded Mixamo assets into Unity
-From here, we need to switch into Unity itself - I am using version *{page-component-display-version}* but I have checked that these basics work as far back as xxxxx.
+From here, we need to switch into Unity itself - I am using version *{page-component-display-version}* but any reasonably current version should be fine.
 
 . Create a new 3D Unity project - I called mine *unity-animation*.
-. Create a plane by right-clicking in the hierarchy view and selecting *3D Object* > *Plane*. Scale the plane's transform to 10 in the X and Z directions.
-+
-[#img-import-plane-scaled]
-.Changing the scale of the initial plane
-image::import-plane-scaled.png[]
-. Create a new folder called *Mixamo* in your *Assets* folder by right-clicking in your *Assets* folder panel, choosing *Create folder* and renaming it to *Mixamo*.
+
+. Create a folder called *Mixamo* in your *Assets* folder by right-clicking in your *Assets* folder panel, choosing *Create folder* and renaming it to *Mixamo*.
 . Double-click on the empty *Mixamo* folder icon to enter the empty *Assets* > *Mixamo* panel.
 . Import the downloaded assets into Unity by either:
 +
@@ -102,7 +98,14 @@ image::expanded-animation-contents.png[]
 +
 Without going into too much detail at this stage, it's clear that the model contains:
 +
-** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions.
-** _Materials_: Alpha_Body_Material and Alpha_Joints_Material
-** _A rig_: mixamorig:Hips
-** An _Animation Clip_: Walking
+** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions. The skinned versions are a combination of their regular meshes, their materials and the rig. It is these two *skinned* meshes that Unity integrates to make a unfied model.
+** _Materials_: Alpha_Body_Material and Alpha_Joints_Material.
+** _A rig_: mixamorig:Hips.
+** An _Animation Clip_: In this case, _Walking_.
+
+== Animating imported Mixamo assets
+. Create a plane by right-clicking in the hierarchy view and selecting *3D Object* > *Plane*. Scale the plane's transform to 10 in the X and Z directions.
++
+[#img-import-plane-scaled]
+.Changing the scale of the initial plane
+image::import-plane-scaled.png[]
