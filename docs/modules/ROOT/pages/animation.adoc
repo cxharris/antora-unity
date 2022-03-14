@@ -165,7 +165,7 @@ image::separated-animations.png[]
 +
 [#img-walking-gif]
 .How the walking animation might look
-image::walking.gif[]
+image::walk.gif[]
 +
 Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't implemented any game-time controls (e.g. zoom or rotate etc.) it may display a less-than-perfect view of our character.
 
