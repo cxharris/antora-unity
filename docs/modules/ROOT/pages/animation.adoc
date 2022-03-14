@@ -9,7 +9,7 @@ Downloading existing animations and their movements (or captured motions) and im
 One place that has a good selection of useful assets is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, and are a little slippery initially if you're unfamiliar with them. They become more familiar with use.
 
 == Downloading characters and animations from Mixamo
-. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu. A search box below the menu allows you to search for characters or animations when you already know what they are called.
+. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu. A search box below the menu allows you to search for characters or animations when you have an idea of what they might be called.
 +
 [#img-mixamo-choose-characters]
 .Choosing Mixamo characters
@@ -129,7 +129,7 @@ Getting _ybot_ to move isn't quite as simple as dropping it into the scene and p
 
 . Create an *Animations* folder underneath *Assets*, and double-click to open it.
 
-. Right click in the currently empty *Animations* folder, choose *Animator Controller* and rename it to *YBotController*. 
+. Right click in the currently empty *Animations* folder, choose and create an *Animator Controller* and rename it to *YBotController*. 
 
 . Drag *YBotController* into the currently empty *Controller* slot of the *Animator* component we just added to *ybot*.
 +
@@ -145,7 +145,7 @@ image::animator-window.png[]
 +
 The grid pane allows us to create and set various _animation states_. In our project, we are going to use animation states called _idle_, _walk_ and _run_, to correspond with our downloaded assets.
 
-. Once again, expand the *ybot@Walking* asset in our *Assets* > *Mixamo* window, and duplicate its embedded animation by selecting it and pressing CTRL-D. This action creates an independent animation that's separate from its parent model.
+. Once again, expand the *ybot@Walking* asset in our *Assets* > *Mixamo* window, and duplicate its embedded animation by selecting it and pressing CTRL-D. This action creates an independent, editable animation that's separate from its parent model, where it currently isn't editable without breaking things.
 +
 [#img-separated-walking-animation]
 .Creating a separated walking animation
@@ -163,9 +163,13 @@ image::separated-animations.png[]
 
 . Press *Play* and zoom into _ybot_ in the *Scene* view and you'll see our character looping through the *Walking* animation - it's _walking in place_ because we checked the *In Place* checkbox when we downloaded the asset from Mixamo in the first place.
 +
-Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't enabled any game-time controls (e.g. zoom or rotate) it may display a less-than-perfect view of our character.
+[#img-walking-gif]
+.How the walking animation might look
+image::walking.gif[]
++
+Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't implemented any game-time controls (e.g. zoom or rotate etc.) it may display a less-than-perfect view of our character.
 
-. To view the other animations, drag them into the *Animator* window, right-click and choose *Set as Layer Default State* and then press *Play*. Here, I've set the *Running* animation as default.
+. To view any of the other animations, drag them into the *Animator* window, right-click and choose *Set as Layer Default State* and then press *Play*. Here, I've set the *Running* animation as default.
 +
 [#img-running-animation-active]
 .Setting the Running animation as default
