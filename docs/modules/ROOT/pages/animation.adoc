@@ -109,12 +109,34 @@ Without going into too much detail at this stage, it's clear that the animation 
 [#img-import-plane-scaled]
 .Changing the scale of the initial plane
 image::import-plane-scaled.png[]
-. Drag an animation from the *Mixamo* > *Assets* folder into the scene and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ would be just as suitable. The movements in the _idle_ animation are very subtle and would probably hinder this first walkthrough. 
+. Drag an animation from the *Mixamo* > *Assets* folder into the Hierarchy pane, which also places it into the scene at the world origin as a Unity GameObject. You could alternatively drag it into the scene window and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ would be just as suitable. The movements in the _idle_ animation are very subtle and would probably hinder this first walkthrough. 
 +
-The scene window shows the model, now located at the world origin, and the Hierarchy pane now contains a *ybot@Walking* entry which you can expand to review its component parts.
+The scene window shows the model, now located at the world origin, and the Hierarchy pane now contains a *ybot@Walking* entry which you can expand to review its component parts. In Unity terms, *ybot@Walking* is a _prefab_.
 +
 [#img-ybot-in-hierarchy]
 .ybot in the Hierarchy view
 image::ybot-in-hierarchy.png[]
 +
-You can see how it is composed of two meshes (each of which has its own material) and a rig, which further decomposes into its own subcomponents.
+You can see how it is composed of two meshes (each of which you can examine in the Inspector to see that it has its own material) and a rig, which further decomposes into its own subcomponents.
+. Click on *Alpha_Joints* in the expanded Hierarchy view of *ybot@walking* and drag its material - *Alpha_Joints_MAT* onto the plane in your scene window - a small aesthetic change that improves the colour balance of the scene. 
+
+=== Using Unity's Animator component with an Animation Controller
+Getting _ybot_ to move isn't quite as simple as dropping it into the scene and pressing *Play* - we need the assistance of two native Unity objects - an *Animator* and an *Animation Controller*.
+
+. Click on the *ybot@Walking* item in the Hierarchy panel and then *Add Component* in the Inspector. Search for *Animator* and select it - this adds an *Animator* component to our GameObject.
+
+. Create an *Animations* folder underneath *Assets*, and double-click to open it.
+
+. Right click in the currently empty *Animations* folder, choose *Animator Controller* and rename it to *YBotController*. 
+
+. Drag *YBotController* into the currently empty *Controller* slot of the *Animator* component we just added to *ybot@Walking*.
++
+[#img-populating-animation-controller]
+.Setting ybot's animation controller
+image::setting-ybot-controller.png[]
+
+. Double-click on *YBotController* in the *Assets* > *Animations* panel and an *Animator* window appears - it has two panes: a grid pane on the right and a pane containing *Layers* and *Parameters* tabs.
++
+[#img-animator-window]
+.The Animator window
+image::animator-window.png[]
