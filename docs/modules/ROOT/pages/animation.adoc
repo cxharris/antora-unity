@@ -1,6 +1,6 @@
-= Animation
+= Animation basics
 :icons: font
-:navtitle: Animation
+:navtitle: Animation basics
 
 Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate character and animation assets developed outside of Unity. Unity's native animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
 
@@ -109,7 +109,7 @@ Without going into too much detail at this stage, it's clear that the animation 
 [#img-import-plane-scaled]
 .Changing the scale of the initial plane
 image::import-plane-scaled.png[]
-. Drag an animation from the *Mixamo* > *Assets* folder into the Hierarchy pane, which also places it into the scene at the world origin as a Unity GameObject. You could alternatively drag it into the scene window and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ would be just as suitable. The movements in the _idle_ animation are very subtle and would probably hinder this first walkthrough. 
+. Drag an animation from the *Mixamo* > *Assets* folder into the Hierarchy pane, which also places it into the scene at the world origin as a Unity GameObject. You could alternatively drag it into the scene window and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ or even _idle_ would be just as suitable. 
 +
 The scene window shows the model, now located at the world origin, and the Hierarchy pane now contains a *ybot@Walking* entry which you can expand to review its component parts. In Unity terms, *ybot@Walking* is a _prefab_.
 +
@@ -118,18 +118,20 @@ The scene window shows the model, now located at the world origin, and the Hiera
 image::ybot-in-hierarchy.png[]
 +
 You can see how it is composed of two meshes (each of which you can examine in the Inspector to see that it has its own material) and a rig, which further decomposes into its own subcomponents.
-. Click on *Alpha_Joints* in the expanded Hierarchy view of *ybot@walking* and drag its material - *Alpha_Joints_MAT* onto the plane in your scene window - a small aesthetic change that improves the colour balance of the scene. 
+. In the Inspector, rename *ybot@Walking* to simply *ybot*.
 
-=== Using Unity's Animator component with an Animation Controller
+. Click on *Alpha_Joints* in the expanded Hierarchy view of *ybot* and drag its material - *Alpha_Joints_MAT* onto the plane in your scene window - a small aesthetic change that improves the colour balance of the scene. 
+
+== Using Unity's Animator component with an Animation Controller
 Getting _ybot_ to move isn't quite as simple as dropping it into the scene and pressing *Play* - we need the assistance of two native Unity objects - an *Animator* and an *Animation Controller*.
 
-. Click on the *ybot@Walking* item in the Hierarchy panel and then *Add Component* in the Inspector. Search for *Animator* and select it - this adds an *Animator* component to our GameObject.
+. Click on the *ybot* item in the Hierarchy panel and then *Add Component* in the Inspector. Search for *Animator* and select it - this adds an *Animator* component to our GameObject.
 
 . Create an *Animations* folder underneath *Assets*, and double-click to open it.
 
 . Right click in the currently empty *Animations* folder, choose *Animator Controller* and rename it to *YBotController*. 
 
-. Drag *YBotController* into the currently empty *Controller* slot of the *Animator* component we just added to *ybot@Walking*.
+. Drag *YBotController* into the currently empty *Controller* slot of the *Animator* component we just added to *ybot*.
 +
 [#img-populating-animation-controller]
 .Setting ybot's animation controller
@@ -140,3 +142,31 @@ image::setting-ybot-controller.png[]
 [#img-animator-window]
 .The Animator window
 image::animator-window.png[]
++
+The grid pane allows us to create and set various _animation states_. In our project, we are going to use animation states called _idle_, _walk_ and _run_, to correspond with our downloaded assets.
+
+. Once again, expand the *ybot@Walking* asset in our *Assets* > *Mixamo* window, and duplicate its embedded animation by selecting it and pressing CTRL-D. This action creates an independent animation that's separate from its parent model.
++
+[#img-separated-walking-animation]
+.Creating a separated walking animation
+image::separated-walking-animation.png[]
+
+. Do the same for *ybot@Idle* and *ybot@Running* and move the separated animations into our *Assets* > *Animations* window.
++
+[#img-separated-animations]
+.Separating animations in the Animations window
+image::separated-animations.png[]
+
+. For each animation, check its *Loop Time* checkbox in the Inspector - this causes the animation to loop indefinitely *if* it is set to a current animation state in the Animation Controller, which we haven't yet done.
+
+. Drag the *Walking* animation into the *Animator* window, where a new *Walking* state appears, and it is connected automatically to the *Entry* state. This is because the first new state is set as the _default_ state - the state entered when you press *Play*. 
+
+. Press *Play* and zoom into _ybot_ in the *Scene* view and you'll see our character looping through the *Walking* animation - it's _walking in place_ because we checked the *In Place* checkbox when we downloaded the asset from Mixamo in the first place.
++
+Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't enabled any game-time controls (e.g. zoom or rotate) it may display a less-than-perfect view of our character.
+
+. To view the other animations, drag them into the *Animator* window, right-click and choose *Set as Layer Default State* and then press *Play*. Here, I've set the *Running* animation as default.
++
+[#img-running-animation-active]
+.Setting the Running animation as default
+image::running-animation-default.png[]
