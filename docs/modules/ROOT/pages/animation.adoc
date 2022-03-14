@@ -83,29 +83,38 @@ From here, we need to switch into Unity itself - I am using version *{page-compo
 . Double-click on the empty *Mixamo* folder icon to enter the empty *Assets* > *Mixamo* panel.
 . Import the downloaded assets into Unity by either:
 +
-** For each asset, right-clicking in the *Assets* > *Mixamo* panel, choosing *Import New Asset* and following the navigation and prompts to select your asset.
+** For each asset, right-clicking in the *Assets* > *Mixamo* panel, choosing *Import New Asset* and following the navigation and prompts to select and import your asset.
 ** Simply dragging and dropping the relevant files into the *Assets* > *Mixamo* panel from your computer's directory display - such as Windows Explorer.
 +
 [#img-imported-animation-assets]
 .Imported ybot animations
 image::imported-animation-assets.png[]
 +
-. Click the arrow on an animation icon to expand the animation and reveal its included components.
+. Click the arrow on an icon to expand the animation and reveal its included components.
 +
 [#img-expanded-animation-contents]
 .Revealing the animation's included components
 image::expanded-animation-contents.png[]
 +
-Without going into too much detail at this stage, it's clear that the model contains:
+Without going into too much detail at this stage, it's clear that the animation contains:
 +
-** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions. The skinned versions are a combination of their regular meshes, their materials and the rig. It is these two *skinned* meshes that Unity integrates to make a unfied model.
+** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions, so four meshes in all. The skinned versions are a combination of their regular meshes, their materials and the rig. It is these two *skinned* meshes that Unity integrates to make a unified model.
 ** _Materials_: Alpha_Body_Material and Alpha_Joints_Material.
 ** _A rig_: mixamorig:Hips.
 ** An _Animation Clip_: In this case, _Walking_.
 
 == Animating imported Mixamo assets
-. Create a plane by right-clicking in the hierarchy view and selecting *3D Object* > *Plane*. Scale the plane's transform to 10 in the X and Z directions.
+. Create a plane by right-clicking in the Hierarchy view and selecting *3D Object* > *Plane*. In the Inspector, scale the plane's transform to 10 in the X and Z directions.
 +
 [#img-import-plane-scaled]
 .Changing the scale of the initial plane
 image::import-plane-scaled.png[]
+. Drag an animation from the *Mixamo* > *Assets* folder into the scene and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ would be just as suitable. The movements in the _idle_ animation are very subtle and would probably hinder this first walkthrough. 
++
+The scene window shows the model, now located at the world origin, and the Hierarchy pane now contains a *ybot@Walking* entry which you can expand to review its component parts.
++
+[#img-ybot-in-hierarchy]
+.ybot in the Hierarchy view
+image::ybot-in-hierarchy.png[]
++
+You can see how it is composed of two meshes (each of which has its own material) and a rig, which further decomposes into its own subcomponents.
