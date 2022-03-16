@@ -1,6 +1,0 @@
-name: blender
-title: Blender
-version: 2.31
-prerelease:
-nav:
-  - modules/ROOT/nav.adoc

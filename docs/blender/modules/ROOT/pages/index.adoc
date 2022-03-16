@@ -1,6 +1,0 @@
-= Blender
-:navtitle: Blender
-
-[.lead]
-Stuff about blender
-

@@ -1,0 +1,13 @@
+site:
+  title: Documation.io
+  url: https://cxharris.github.io
+  start_page: unity::index.adoc
+content:
+  sources:
+    - url: https://github.com/cxharris/antora-unity.git
+      start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui

@@ -4,4 +4,3 @@ version: 2021.2
 prerelease: .14f1
 nav:
   - modules/ROOT/nav.adoc
-  - modules/Blender/nav.adoc
