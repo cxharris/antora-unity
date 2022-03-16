@@ -4,5 +4,5 @@
 [.lead]
 Some snippets of tutorials about Unity - I have used version *{page-component-display-version}* but any reasonably current version should be fine. 
 
-These are _selected_ exercises, which I've found useful to write down as I've encountered my own need to become familiar with the described techniques; more exhaustive Unity tutorials can be found everywhere on the web. Much - and more - similar content is also available through other channels and media such as Youtube, but I tend to prefer plodding through text-based tutorials at my own pace rather than trying to cope with too-fast or too-slow video presentations.
+These are _selected_ exercises, which I've found useful to write down as I've encountered my own need to become familiar with the described techniques. I'm not starting at the beginning and a little (but not a lot of) Unity knowledge is assumed - more exhaustive Unity tutorials can be found everywhere on the web. Much - and more - similar content is also available through other channels and media such as Youtube, but I tend to prefer plodding through text-based tutorials at my own pace rather than trying to cope with too-fast or too-slow video presentations.
 

@@ -157,17 +157,17 @@ image::separated-walking-animation.png[]
 .Separating animations in the Animations window
 image::separated-animations.png[]
 
-. For each animation, check its *Loop Time* checkbox in the Inspector - this causes the animation to loop indefinitely *if* it is set to a current animation state in the Animation Controller, which we haven't yet done.
+. For each animation, check its *Loop Time* checkbox in the Inspector - this causes the animation to loop indefinitely when it is active.
 
 . Drag the *Walking* animation into the *Animator* window, where a new *Walking* state appears, and it is connected automatically to the *Entry* state. This is because the first new state is set as the _default_ state - the state entered when you press *Play*. 
 
 . Press *Play* and zoom into _ybot_ in the *Scene* view and you'll see our character looping through the *Walking* animation - it's _walking in place_ because we checked the *In Place* checkbox when we downloaded the asset from Mixamo in the first place.
 +
-[#img-walking-gif]
-.How the walking animation might look
+[#img-walk-gif]
+.ybot walks!
 image::walk.gif[]
 +
-Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't implemented any game-time controls (e.g. zoom or rotate etc.) it may display a less-than-perfect view of our character.
+Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't implemented any game-time controls (e.g. zoom or rotate etc.) or made any camera or lighting adjustments, it may display a less-than-perfect framing of our character.
 
 . To view any of the other animations, drag them into the *Animator* window, right-click and choose *Set as Layer Default State* and then press *Play*. Here, I've set the *Running* animation as default.
 +
