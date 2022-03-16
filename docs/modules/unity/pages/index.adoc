@@ -1,5 +1,5 @@
-= Unity
-:navtitle: Unity
+= Documation
+:navtitle: Documation
 
 [.lead]
 Some snippets of tutorials about Unity - I have used version *{page-component-display-version}* but any reasonably current version should be fine. 
