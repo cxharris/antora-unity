@@ -1,7 +1,7 @@
 name: documation
 title: Documation
 version: 0.1
-start_page: documation:index.adoc
+start_page: documation:topic/index.adoc
 prerelease:
 nav:
   - modules/documation/pages/nav.adoc
