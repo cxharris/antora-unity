@@ -1,0 +1,4 @@
+= Blender basics
+:navtitle: Blender basics
+
+You need to be aware of Blender's geometry and controls.
