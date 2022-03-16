@@ -1,7 +1,7 @@
 site:
   title: Documation.io
   url: https://cxharris.github.io
-  start_page: documation::index.adoc
+  start_page: unity::index.adoc
 content:
   sources:
     - url: https://github.com/cxharris/antora-unity.git
