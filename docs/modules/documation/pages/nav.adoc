@@ -1,4 +1,3 @@
-* xref:index.adoc[]
-** xref:animation.adoc[]
-** xref:ui.adoc[]
+* xref:topic/index.adoc[]
+** xref:topic/animation.adoc[]
 ** xref:topic/ui.adoc[]

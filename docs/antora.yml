@@ -4,4 +4,4 @@ version: 0.1
 start_page: documation:index.adoc
 prerelease:
 nav:
-  - modules/documation/nav.adoc
+  - modules/documation/pages/nav.adoc
