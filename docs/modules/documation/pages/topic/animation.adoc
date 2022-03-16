@@ -1,0 +1,176 @@
+= Animation basics
+:icons: font
+:navtitle: Animation basics
+
+Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate character and animation assets developed outside of Unity. Unity's native animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
+
+=== Mixamo
+
+One place that has a good selection of useful assets is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, and are a little slippery initially if you're unfamiliar with them. They become more familiar with use.
+
+== Downloading characters and animations from Mixamo
+. Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu. A search box below the menu allows you to search for characters or animations when you have an idea of what they might be called.
++
+[#img-mixamo-choose-characters]
+.Choosing Mixamo characters
+image::miximo-choose-characters.png[]
++
+and
++
+[#img-mixamo-choose-animations]
+.Choosing Mixamo animations
+image::miximo-choose-animations.png[]
+
+. On the *Characters* tab, search for *ybot* and click the relevant thumbnail when the search finishes - the _ybot_ pops up in the right-hand preview pane, where you can review and manipulate it. This action also sets *ybot* as the active character.
++
+TIP: If you select a character - such as *ybot* - and then an animation, the animation is applied to your chosen character, regardless of the character the animation thumbnail contains.
+
+. On the *Animations* tab, search for *idle* and select the thumbnail. There are several animations called *idle* - just choose one that appeals.
++
+Look carefully and you'll see that even an _idling_ animation contains movement.
++
+[#img-mixamo-idle-ybot]
+.Idle on ybot
+image::idle-ybot.png[]
+
+. Press *DOWNLOAD* and a modal dialog box pops up:
++
+[#img-mixamo-download-dialog]
+.The Mixamo download dialog
+image::mixamo-download-dialog.png[]
++
+Complete the dialog:
++
+** *Format*: FBX for Unity(.fbx)
++
+_.fbx_ files are often used in game development and animation and generally contain 3D models saved in the Autodesk Filmbox format. *FBX for Unity* is this same format with some Unity optimisations applied.
+** *Skin*: With Skin
++
+By selecting *With Skin* we are including the 3D model with the file.
+** *Frames per Second*: 30
++ 
+All three offered values are acceptable because Unity's animation system uses _interpolation_, which essentially involves estimating animation values between frames. Bear in mind that there's no magic - the higher the frame rate, the better the quality but the larger the file size. Choosing 30 offers a decent compromise between quality and output file size.
+** *Keyframe Reduction*: None
++
+This process removes keyframes if Unity determines that two individual frames are not sufficiently different to warrant the overhead. This actually happens when Unity _imports_ assets, so the animation keyframes you see in Unity have already been reduced. For this exerecise we'll simply choose *None*.
++
+Press *DOWNLOAD* to download the idle animation to a known directory on your machine.
+
+. Repeat the above steps to download a _walking_ animation and a _running_ animation. 
++
+IMPORTANT: For animations that include movement over the ground - like walking and running - you should check the *In Place* checkbox before downloading - otherwise the characters will move across the scene when you activate them within Unity. This movement isn't necessarily wrong, it's just not what we need at the moment. 
++ 
+[#img-walking-ybot]
+.Downloading a walking animation and the *In Place* checkbox
+image::walking-ybot.png[]
+
+. You now have three _ybot__ animations downloaded into a local folder:
++
+[#img-downloaded-ybot-animations]
+.Downloaded ybot animations
+image::downloaded-ybot-animations.png[]
++
+You made sure to check the *In Place* checkbox prior to downloading the _walking_ and _running_ animations.
++
+The next stage in this workflow is to import these assets into Unity.
+
+== Importing downloaded Mixamo assets into Unity
+From here, we need to switch into Unity itself - I am using version *{page-component-display-version}* but any reasonably current version should be fine.
+
+. Create a new 3D Unity project - I called mine *unity-animation*.
+
+. Create a folder called *Mixamo* in your *Assets* folder by right-clicking in your *Assets* folder panel, choosing *Create folder* and renaming it to *Mixamo*.
+. Double-click on the empty *Mixamo* folder icon to enter the empty *Assets* > *Mixamo* panel.
+. Import the downloaded assets into Unity by either:
++
+** For each asset, right-clicking in the *Assets* > *Mixamo* panel, choosing *Import New Asset* and following the navigation and prompts to select and import your asset.
+** Simply dragging and dropping the relevant files into the *Assets* > *Mixamo* panel from your computer's directory display - such as Windows Explorer.
++
+[#img-imported-animation-assets]
+.Imported ybot animations
+image::imported-animation-assets.png[]
++
+. Click the arrow on an icon to expand the animation and reveal its included components.
++
+[#img-expanded-animation-contents]
+.Revealing the animation's included components
+image::expanded-animation-contents.png[]
++
+Without going into too much detail at this stage, it's clear that the animation contains:
++
+** _Meshes_: Alpha_Joints and Alpha_Surface - both skinned and unskinned versions, so four meshes in all. The skinned versions are a combination of their regular meshes, their materials and the rig. It is these two *skinned* meshes that Unity integrates to make a unified model.
+** _Materials_: Alpha_Body_Material and Alpha_Joints_Material.
+** _A rig_: mixamorig:Hips.
+** An _Animation Clip_: In this case, _Walking_.
+
+== Animating imported Mixamo assets
+. Create a plane by right-clicking in the Hierarchy view and selecting *3D Object* > *Plane*. In the Inspector, scale the plane's transform to 10 in the X and Z directions.
++
+[#img-import-plane-scaled]
+.Changing the scale of the initial plane
+image::import-plane-scaled.png[]
+. Drag an animation from the *Mixamo* > *Assets* folder into the Hierarchy pane, which also places it into the scene at the world origin as a Unity GameObject. You could alternatively drag it into the scene window and reset its transform (right-click on its *Transform* component header in the Inspector and choose *Reset*). I've chosen the _walking_ animation but _running_ or even _idle_ would be just as suitable. 
++
+The scene window shows the model, now located at the world origin, and the Hierarchy pane now contains a *ybot@Walking* entry which you can expand to review its component parts. In Unity terms, *ybot@Walking* is a _prefab_.
++
+[#img-ybot-in-hierarchy]
+.ybot in the Hierarchy view
+image::ybot-in-hierarchy.png[]
++
+You can see how it is composed of two meshes (each of which you can examine in the Inspector to see that it has its own material) and a rig, which further decomposes into its own subcomponents.
+. In the Inspector, rename *ybot@Walking* to simply *ybot*.
+
+. Click on *Alpha_Joints* in the expanded Hierarchy view of *ybot* and drag its material - *Alpha_Joints_MAT* onto the plane in your scene window - a small aesthetic change that improves the colour balance of the scene. 
+
+== Using Unity's Animator component with an Animation Controller
+Getting _ybot_ to move isn't quite as simple as dropping it into the scene and pressing *Play* - we need the assistance of two native Unity objects - an *Animator* and an *Animation Controller*.
+
+. Click on the *ybot* item in the Hierarchy panel and then *Add Component* in the Inspector. Search for *Animator* and select it - this adds an *Animator* component to our GameObject.
+
+. Create an *Animations* folder underneath *Assets*, and double-click to open it.
+
+. Right click in the currently empty *Animations* folder, choose and create an *Animator Controller* and rename it to *YBotController*. 
+
+. Drag *YBotController* into the currently empty *Controller* slot of the *Animator* component we just added to *ybot*.
++
+[#img-populating-animation-controller]
+.Setting ybot's animation controller
+image::setting-ybot-controller.png[]
+
+. Double-click on *YBotController* in the *Assets* > *Animations* panel and an *Animator* window appears - it has two panes: a grid pane on the right and a pane containing *Layers* and *Parameters* tabs.
++
+[#img-animator-window]
+.The Animator window
+image::animator-window.png[]
++
+The grid pane allows us to create and set various _animation states_. In our project, we are going to use animation states called _idle_, _walk_ and _run_, to correspond with our downloaded assets.
+
+. Once again, expand the *ybot@Walking* asset in our *Assets* > *Mixamo* window, and duplicate its embedded animation by selecting it and pressing CTRL-D. This action creates an independent, editable animation that's separate from its parent model, where it currently isn't editable without breaking things.
++
+[#img-separated-walking-animation]
+.Creating a separated walking animation
+image::separated-walking-animation.png[]
+
+. Do the same for *ybot@Idle* and *ybot@Running* and move the separated animations into our *Assets* > *Animations* window.
++
+[#img-separated-animations]
+.Separating animations in the Animations window
+image::separated-animations.png[]
+
+. For each animation, check its *Loop Time* checkbox in the Inspector - this causes the animation to loop indefinitely when it is active.
+
+. Drag the *Walking* animation into the *Animator* window, where a new *Walking* state appears, and it is connected automatically to the *Entry* state. This is because the first new state is set as the _default_ state - the state entered when you press *Play*. 
+
+. Press *Play* and zoom into _ybot_ in the *Scene* view and you'll see our character looping through the *Walking* animation - it's _walking in place_ because we checked the *In Place* checkbox when we downloaded the asset from Mixamo in the first place.
++
+[#img-walk-gif]
+.ybot walks!
+image::walk.gif[]
++
+Depending on how the scene is set up, you may also see it in the *Game* window, but since we haven't implemented any game-time controls (e.g. zoom or rotate etc.) or made any camera or lighting adjustments, it may display a less-than-perfect framing of our character.
+
+. To view any of the other animations, drag them into the *Animator* window, right-click and choose *Set as Layer Default State* and then press *Play*. Here, I've set the *Running* animation as default.
++
+[#img-running-animation-active]
+.Setting the Running animation as default
+image::running-animation-default.png[]
