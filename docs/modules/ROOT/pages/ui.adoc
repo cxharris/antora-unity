@@ -6,6 +6,8 @@
 . Create an empty GameObject called *UI-base* - this is going to be the ultimate parent of all UI screens - our UI system is going to live on this particular GameObject.
 +
 This makes what follows much easier to manage.
+
+=== Setting things up
 . Right-click on *UI-base* in the Hierarchy view and choose *UI* > *Canvas* to create a 2D canvas. Leave its render mode as *Screen Space - Overlay*.
 +
 Here's what your Inspector view of your canvas might look like:
@@ -17,7 +19,10 @@ image::canvas-inspector.png[]
 . Organise your *Scene* window so that the new canvas is square on in the middle.
 . In the *Canvas Scaler* component of the *Canvas* set the *UI Scale Mode* to *Scale With Screen Size*, and set the *Reference Resolution* to 2560x1440.
 . Drag the *EventSystem* in the Hierarchy view so that it is a child of *UI-base* - another nod to keeping things organised.
-. Right-click *Canvas* and choose *UI* > *Image* to add an image as a child of *Canvas* - rename the image to *background*.
+. Right-click on your *Canvas* and choose *UI* > *Panel* to create a new panel - call it *LoginScreen*.
+
+== Adding a background image
+. Right-click *LoginScreen* and choose *UI* > *Image* to add an image as a child of *Canvas* - rename the image to *background*.
 +
 You can see that the image is represented by a small white square in the middle of the canvas.
 +
@@ -46,10 +51,16 @@ TIP: *Unsplash* - https://unsplash.com/ - is a great place to find free images. 
 . Click the downloaded image within Unity and examine it in the Inspector. Make sure its *Texture Type* is set to *Sprite (2D and UI)*.
 . Once more select the *background* in the Hierarchy view and drag your image from your *Assets* > *Images* folder into the *Source Image* slot of the background's *Image* compnent.
 . Hit *2* on your keyboard - your canvas snaps into a 2D representation which will make things easier. This is OK even if your application is a 3D app.
+
+== Adding a logo image
 . Find another image to represent, say, a logo - this time, it's not going to cover the whole screen so make it a smaller image. Make sure you place it in the *Assets* > *Image* folder and set its *Texture Type* to *Sprite (2D and UI)* in the inspector.
 . Right-click on canvas again and choose *UI* > *Image* to add another child image - rename the image to *logo*. Drag the latest image from the *Asset* > *Images* folder into the *Source Image* slot of the *logo* as viewed in the Inspector.
 . With the *logo* selected in the Hierarchy panel, open its anchor presets window and click the icon representing _center top_: image:center-top.png[]
 +
 This constrains the log to remain in the center at a fixed distance from the top, regardless of screen size. 
 . In the inspector for the *logo* set its *Pos &* value to something reasonable - I set mine to -300.
+
+== Adding User Name and Password input fields
 . Right-click the canvas and choose *UI* > *Input Field - TextMeshPro* - rename it to *UserName*. Unity drops it onto the scene and you can open its anchor presets dialog in the Inspector, select *center top* and then adjust its *Pos Y* setting to something reasonable. Mine is set to -500.
+. Remove the *Image* component from the *UserName* field - it will make it look weird but trust me.
+. Select the *Placeholder* child of *UserName* in the text area, change its actual text to *User Name*, its *Vertex Color* to something contrasting - often white, and its font size to something large, say 45. Do the same for the *Text* child, leaving the actual text value blank.
