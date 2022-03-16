@@ -25,10 +25,10 @@ You can see that the image is represented by a small white square in the middle 
 .The image is a small square in the middle of the canvas
 image::image-added-to-canvas.png[]
 
-. Select *background* in your Hierarchy view and with (most probably) your left hand, hold down all of CTRL SHIFT and ALT (Windows). Look at the background's *Rect Transform* panel and click on the *anchor presets icon*: image:anchor-presets-icon.png[]. Note that the graphic it displays varies, and may not be the same as I have used. 
+. Select *background* in your Hierarchy view and with (most probably) your left hand, hold down all of CTRL SHIFT and ALT (Windows). Look at the background's *Rect Transform* panel and click on the *anchor presets icon*: image:anchor-presets-icon.png[]. Note that the graphic it displays changes depending on what it is currently set to, and may not be the same as the icon just referred to. 
 +
 [#img-anchor-presets-icon-location]
-.The anchor presets dialog icon
+.The anchor presets dialog icon - it displays its current setting
 image::anchor-presets-icon-location.png[]
 +
 The *anchor presets* dialog pops up:
@@ -36,6 +36,20 @@ The *anchor presets* dialog pops up:
 [#img-anchor-presets]
 .The anchor presets dialog
 image::anchor-presets.png[]
-. Click the bottom-right selection at the intersection of _stretch_ and _stretch_ (while still holding down CTRL SHIFT and ALT with the other hand).
+. Click the bottom-right selection at the intersection of _stretch_ and _stretch_ (while still holding down CTRL SHIFT and ALT with the other hand): image:anchor-presets-icon.png[] ... this time there's no question that this is what you need to click!
 +
 The image stretches to fill the canvas, snapping the anchors to a full stretch.
++ The anchor presets dialog lets you build up a responsive geometry that will adjust as your application is viewed in many devices. But remember, it's not magic!
+. Create an *Images* folder underneath your *Assets* folder in Unity, and download an image - any image - into it. This image is going to be the background of our first UI screen, so it would be good if its size and resolution matches that of your canvas.
++
+TIP: *Unsplash* - https://unsplash.com/ - is a great place to find free images. That's where I got mine.
+. Click the downloaded image within Unity and examine it in the Inspector. Make sure its *Texture Type* is set to *Sprite (2D and UI)*.
+. Once more select the *background* in the Hierarchy view and drag your image from your *Assets* > *Images* folder into the *Source Image* slot of the background's *Image* compnent.
+. Hit *2* on your keyboard - your canvas snaps into a 2D representation which will make things easier. This is OK even if your application is a 3D app.
+. Find another image to represent, say, a logo - this time, it's not going to cover the whole screen so make it a smaller image. Make sure you place it in the *Assets* > *Image* folder and set its *Texture Type* to *Sprite (2D and UI)* in the inspector.
+. Right-click on canvas again and choose *UI* > *Image* to add another child image - rename the image to *logo*. Drag the latest image from the *Asset* > *Images* folder into the *Source Image* slot of the *logo* as viewed in the Inspector.
+. With the *logo* selected in the Hierarchy panel, open its anchor presets window and click the icon representing _center top_: image:center-top.png[]
++
+This constrains the log to remain in the center at a fixed distance from the top, regardless of screen size. 
+. In the inspector for the *logo* set its *Pos &* value to something reasonable - I set mine to -300.
+. Right-click the canvas and choose *UI* > *Input Field - TextMeshPro* - rename it to *UserName*. Unity drops it onto the scene and you can open its anchor presets dialog in the Inspector, select *center top* and then adjust its *Pos Y* setting to something reasonable. Mine is set to -500.
