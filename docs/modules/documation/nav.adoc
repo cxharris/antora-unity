@@ -1,3 +1,3 @@
-* xref:pages/unity/index.adoc[]
-** xref:pages/unity/animation.adoc[]
-** xref:pages/unity/ui.adoc[]
+* xref:index.adoc[]
+** xref:animation.adoc[]
+** xref:ui.adoc[]
