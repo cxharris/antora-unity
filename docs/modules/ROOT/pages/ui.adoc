@@ -25,7 +25,7 @@ You can see that the image is represented by a small white square in the middle 
 .The image is a small square in the middle of the canvas
 image::image-added-to-canvas.png[]
 
-. Select *background* in your Hierarchy view and with (most probably) your left hand, hold down all of CTRL SHIFT and ALT (Windows). Look at the background's *Rect Transform* panel and click on the *anchor presets icon*: image:anchor-presets-icon[]. Note that the graphic it displays varies, and may not be the same as I have used. 
+. Select *background* in your Hierarchy view and with (most probably) your left hand, hold down all of CTRL SHIFT and ALT (Windows). Look at the background's *Rect Transform* panel and click on the *anchor presets icon*: image::anchor-presets-icon.png[]. Note that the graphic it displays varies, and may not be the same as I have used. 
 +
 [#img-anchor-presets-icon-location]
 .The anchor presets dialog icon
@@ -36,4 +36,6 @@ The *anchor presets* dialog pops up:
 [#img-anchor-presets]
 .The anchor presets dialog
 image::anchor-presets.png[]
-. Click the bottom-right selection (while still holding down CTRL SHIFT and ALT with the other hand): 
+. Click the bottom-right selection at the intersection of _stretch_ and _stretch_ (while still holding down CTRL SHIFT and ALT with the other hand).
++
+The image stretches to completely fill the canvas.
