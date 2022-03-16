@@ -38,4 +38,4 @@ The *anchor presets* dialog pops up:
 image::anchor-presets.png[]
 . Click the bottom-right selection at the intersection of _stretch_ and _stretch_ (while still holding down CTRL SHIFT and ALT with the other hand).
 +
-The image stretches to completely fill the canvas, snapping the anchors to a full stretch.
+The image stretches to fill the canvas, snapping the anchors to a full stretch.
