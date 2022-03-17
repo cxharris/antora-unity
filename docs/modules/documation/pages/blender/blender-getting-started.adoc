@@ -1,7 +1,7 @@
 = Getting started with Blender
 :navtitle: Getting started
 
-== Launching Blender
+== Launching and exploring Blender
 . When you launch Blender for the first time, you get to see a dialog that asks you for some preferences - just accept the defaults from now and press *Next*.
 . The next dialog offers you the opportunity to create a *New File* among other things. Click *General* underneath *New File* and Blender's initial launch screen appears:
 +
@@ -9,11 +9,8 @@
 .Blender's initial screen
 image::blender-launch-screen.png[]
 +
-The above window has been made smaller enough to reasonably fit on this page, but in reality, the editing pane that contains a cube is much larger and occupies most of your screen.
+Highlighted above, Blender's initial interface decomposes into five regions.
 
-== Blender's interface
-Logically, Blender's initial interface decomposes into four or five windows - highlighted in the previous image.
-+
 * The main window outlined in red which contains a camera, a lamp and a default cube is called the *3D view*. Most of our work happens here.
 * The thin window at the bottom outlined in pink is the *timeline*, which allows you to animate objects through time.
 * The window outlined in blue is called the *properties* window and it allows you to list many different properties of selected objects.
@@ -30,4 +27,5 @@ image::blender-window-configuration.png[]
 
 To maximize any single window, minimising others, just hover your mouse over it and press CTRL - SPACEBAR. CTRL - SPACBAR again restores everything to as it was.
 
+The 3D view features a red line which is the X axis, and a green line which is the Y axis.
 
