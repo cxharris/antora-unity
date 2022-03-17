@@ -3,4 +3,31 @@
 
 == Launching Blender
 . When you launch Blender for the first time, you get to see a dialog that asks you for some preferences - just accept the defaults from now and press *Next*.
-. The next dialog offers you the opportunity to create a *New File* among other things. Click *General* unerneath *New File*.
+. The next dialog offers you the opportunity to create a *New File* among other things. Click *General* underneath *New File* and Blender's initial launch screen appears:
++
+[#img-blender-launch-screen]
+.Blender's initial screen
+image::blender-launch-screen.png[]
++
+The above window has been made smaller enough to reasonably fit on this page, but in reality, the editing pane that contains a cube is much larger and occupies most of your screen.
+
+== Blender's interface
+Logically, Blender's initial interface decomposes into four or five windows - highlighted in the previous image.
++
+* The main window outlined in red which contains a camera, a lamp and a default cube is called the *3D view*. Most of our work happens here.
+* The thin window at the bottom outlined in pink is the *timeline*, which allows you to animate objects through time.
+* The window outlined in blue is called the *properties* window and it allows you to list many different properties of selected objects.
+* The window outlined in green is called the *outliner* which displays a tree structure representing all objects in your scene.
+* Outlined in yellow is the *header* which contains many menu options.
+
+You don't have to stick with the default arrangement of windows - you can choose one of a number of *premade layouts* - they are offered in the header bar as options: *Layout* (default), *Modeling*, *Sculpting* and so on.
+
+A drop-down in the top left of each true window allows you to replace the current window's contents with another - so, for exmaple, you could swap the timeline for the 3D view:
+
+[#img-blender-window-configurations]
+.Blender's window chooser
+image::blender-window-configuration.png[]
+
+To maximize any single window, minimising others, just hover your mouse over it and press CTRL - SPACEBAR. CTRL - SPACBAR again restores everything to as it was.
+
+

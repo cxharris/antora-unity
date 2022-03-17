@@ -1,9 +1,7 @@
 = Blender basics
+:navtitle: Blender
 
 Blender - available at https://blender.org - is a super and free 3D modelling and animation tool. It can also export assets in a form that Unity can consume, which is a frequently used workflow.
 
 I'm using version 2.1 but would be surprised if these exercises didn't work for earlier versions. 
-+
-[#img-blender-launch-screen]
-.Blender's initial screen
-image::blender-launch-screen.png[]
+
