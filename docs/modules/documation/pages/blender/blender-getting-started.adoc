@@ -29,3 +29,38 @@ To maximize any single window, minimising others, just hover your mouse over it 
 
 The 3D view features a red line which is the X axis, and a green line for the Y axis.
 
+== Manipulating the 3D view
+First, it's best to mention that Blender in 3D works best with a three-button mouse. It's easier all round.
+
+To *tumble* around your 3D view, just click your middle mouse button and drag around in the view. Another way to do it is to click and drag in Blender's gizmo area at the top right of the 3D view: image:blender-gizmo-area[].
+
+To *zoom*, just use your scroll wheel.
+
+Press SHIFT - MIDDLE MOUSE  to *pan* around the scene.
+
+Hit *1* on your NUMPAD to flip to *front orthographic* view, *3* for *side orthographic* or *7* for *top orthographic* view. Hit *CTRL* and then *1*, *3* or *7* and it will flip to *left*, *back* and *bottom* respectively. Tumble out of any of these views to return to the *perspective* view. Click on the dots in the gizmo area to perform equivalent actions. The patterns take a little practice, but if this is preferable to the NUMPAD for you, you'll soon get used to it.
+
+If you're in an orthographic view, you can hit NUMPAD *2*, *4*, *6* and *8* to rotate in increments around your view.
+
+In the 3D view, you can see the camera:
+
+[#img-blende-camera]
+.Blender's initial camera
+image::blender-camera.png[]
+
+You can click on it to select it, whene it aquires an orange contour. Hit *0* on the NUMPAD to go into camera view, where the 3D view flips to present what the camera is seeing.  This is the view that represents your renders or animations.
+
+== Manipulating objects in the 3D view
+
+
+
+
+
+
+
+
+
+
+
+
+
