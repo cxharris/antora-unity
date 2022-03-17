@@ -1,0 +1,6 @@
+= Getting started with Blender
+:navtitle: Getting started
+
+== Launching Blender
+. When you launch Blender for the first time, you get to see a dialog that asks you for some preferences - just accept the defaults from now and press *Next*.
+. The next dialog offers you the opportunity to create a *New File* among other things. Click *General* unerneath *New File*.
