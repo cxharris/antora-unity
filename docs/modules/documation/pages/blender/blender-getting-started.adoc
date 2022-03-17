@@ -32,7 +32,7 @@ The 3D view features a red line which is the X axis, and a green line for the Y 
 == Manipulating the 3D view
 First, it's best to mention that Blender in 3D works best with a three-button mouse. It's easier all round.
 
-To *tumble* around your 3D view, just click your middle mouse button and drag around in the view. Another way to do it is to click and drag in Blender's gizmo area at the top right of the 3D view: image:blender-gizmo-area[].
+To *tumble* around your 3D view, just click your middle mouse button and drag around in the view. Another way to do it is to click and drag in Blender's gizmo area at the top right of the 3D view: image:blender-gizmo-area.png[].
 
 To *zoom*, just use your scroll wheel.
 

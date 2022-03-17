@@ -4,11 +4,11 @@
 
 Downloading existing animations and their movements (or captured motions) and importing them into Unity is a part of the modern canon of Unity. This section explains the basics of Unity's animation system, and one way to incorporate character and animation assets developed outside of Unity. Unity's native animation system should not be confused with the animation systems separately available from the Unity Asset Store - either free or at a cost.
 
-=== Mixamo
+== Mixamo
 
 One place that has a good selection of useful assets is Adobe's *Mixamo* platform - https://www.mixamo.com. It's a free platform where registered users can download a variety of character models and hundreds of animations. 'Character models' and 'animations' are complex assemblies of simpler components, and are a little slippery initially if you're unfamiliar with them. They become more familiar with use.
 
-== Downloading characters and animations from Mixamo
+=== Downloading characters and animations from Mixamo
 . Log into the Mixamo platform and choose either *Characters* or *Animations* in the top-level menu. A search box below the menu allows you to search for characters or animations when you have an idea of what they might be called.
 +
 [#img-mixamo-choose-characters]
@@ -74,7 +74,7 @@ You made sure to check the *In Place* checkbox prior to downloading the _walking
 +
 The next stage in this workflow is to import these assets into Unity.
 
-== Importing downloaded Mixamo assets into Unity
+=== Importing downloaded Mixamo assets into Unity
 From here, we need to switch into Unity itself - I am using version *{page-component-display-version}* but any reasonably current version should be fine.
 
 . Create a new 3D Unity project - I called mine *unity-animation*.
@@ -103,7 +103,7 @@ Without going into too much detail at this stage, it's clear that the animation 
 ** _A rig_: mixamorig:Hips.
 ** An _Animation Clip_: In this case, _Walking_.
 
-== Animating imported Mixamo assets
+=== Animating imported Mixamo assets
 . Create a plane by right-clicking in the Hierarchy view and selecting *3D Object* > *Plane*. In the Inspector, scale the plane's transform to 10 in the X and Z directions.
 +
 [#img-import-plane-scaled]
