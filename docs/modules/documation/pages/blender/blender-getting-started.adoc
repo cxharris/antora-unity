@@ -27,5 +27,5 @@ image::blender-window-configuration.png[]
 
 To maximize any single window, minimising others, just hover your mouse over it and press CTRL - SPACEBAR. CTRL - SPACBAR again restores everything to as it was.
 
-The 3D view features a red line which is the X axis, and a green line which is the Y axis.
+The 3D view features a red line which is the X axis, and a green line for the Y axis.
 
