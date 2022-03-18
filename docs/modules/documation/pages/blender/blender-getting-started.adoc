@@ -55,7 +55,7 @@ In the world of direct manipulation in Blender, shortcut keys are a way of life.
 
 To *select* an object, just left-click it and its edges usually change colour to a nice orange. I know this sounds kinda trivial, but earlier versions of Blender used a default *right-click* for selection. Apparently, there are a couple of genuine UX advantages to this, but it seems to me they must have been swamped by the disadvantage of having to remember special Blender rules above and beyond all the other time-honoured conventions of software. Anyway, it's now *left-click*.
 
-To move an object, hit the *G* key when it's selected - this grabs the object for you to place elsewhere. *G* is apparently the shortcut key for *Grab*. You can grab things like lights and cameras, as well as objects like cubes and spheres. But I know we haven't done spheres yet. When you left-click a grabbed object, it's dropped in a new location.
+To move an object, hit the *G* key when it's selected - this grabs the object for you to place elsewhere. *G* is apparently the shortcut key for *Grab*. You can grab things like lights and cameras, as well as objects like cubes and spheres. But I know we haven't done spheres yet. When you left-click a grabbed object, it's dropped in a new location. While an object is grabbed, you can hit X, Y or Z to constrain movement to one of those specific axes. If we do this - hit *G* then an axis, we can also type in a displacement along the axis along which the cube will move.
 
 You can also move an object using the *tools* menu in the top-left of the 3D view. If it's not visible, hit the *T* key.
 
@@ -63,11 +63,33 @@ You can also move an object using the *tools* menu in the top-left of the 3D vie
 .Manipulation tools
 image::blender-tools.png[]
 
+We may well explore more of these tools at some stage, but for now, check out the third one down - it's a *move* manipulator. Click it (with the cube  selected) and the cube acquires some *move manpulators* which let you move it along the X, Y or Z axes.
 
+[#img-blender-move-manipulators]
+.Move manipulators
+image::blender-move-manipulators.png[]
 
+Hitting *G* and pressing SHIFT - X, allows movement on all axes except X, and the same pattern applies for all the other axes.
 
+Just below *move* on the manipulation tools menu is *rotate*. If you select the cube and click *rotate*, the *rotate manipulators* appear.
 
+[#img-blender-rotate-manipulators]
+.Rotate manipulators
+image::blender-rotate-manipulators.png[]
 
+Click on the red, green or blue arcs to rotate the cube around the corresponding axes. If you get it wrong, CTRL - Z undoes your last action.
+
+Instead of using the widget, we can also hit *R* to rotate, which allows you to rotate in the perspective you're in. After hitting *R* you can press *X*, *Y* or *Z* to constrain the rotation appropriately - very useful! Hitting any of these R-axis combinations activates a message in the top left telling you how many degrees you've rotated about which axis. We can also provide input when in this mode - type *45* on your keyboard, and it will rotate 45 degrees.
+
+Next manipulator down in the menu is *scaling*. Once again, handles appear that let you scale the object, or we can hit *S* and then an axis to constrain scaling along that axis. Like the other operatins, sequences like *S*, *Y*, *3* scale an object 3 units on the Y axis.
+
+Hit the *N* key with an object selected, and a menu pops up that lets you specify translation/rotation/scale directly and accurately.
+
+*ALT-R* clears any rotation, *ALT-G* clears any movement and *ALT-S* any scaling. Somehow though, these commands have been entangled with my graphic card settings that insist on popping up whenever I type *ALT-R*. Sucks.
+
+Hit *CTRL-A* to *apply* various operations to the object. Once applied, the current state of the property becomes the default. So *CTRL-A* > *Rotation* makes the current rotation the default, 'zero' rotation. Doing this of course nullifies what *ALT-R*, *ALT-G* and *ALT-S* might have done, because there's now nothing to 'clear' - we're at 'zero'.
+
+== Manipulating geometry in Blender
 
 
 
