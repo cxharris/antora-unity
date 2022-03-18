@@ -75,7 +75,7 @@ Just below *move* on the manipulation tools menu is *rotate*. If you select the 
 
 [#img-blender-rotate-manipulators]
 .Rotate manipulators
-image::blender-rotate-manipulators.png[]
+image::blender-rotate-manipulator.png[]
 
 Click on the red, green or blue arcs to rotate the cube around the corresponding axes. If you get it wrong, CTRL - Z undoes your last action.
 
