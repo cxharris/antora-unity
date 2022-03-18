@@ -1,5 +1,12 @@
 = Why?
 :navtitle: Why
 
-Retired tech writer here.
+Retired tech writer here, exploring the software I always wanted to play with but never had the time. It's all new to me, so I have to write things down to remember. Y'all must have heard of early-onset Alzheimer's, right? So, this site is a disorganised, illogical whack a mole across a bunch of technologies and domains that I happen to have bagatelled through out of pure interest.
+
+I've used Antora - https://antora.org/ - to build the site, simply because I've never used it before and I've long had a yearning to do use Asciidoc for something larger than a toy project. What do I think of Antora? Ask me later, but one thing I've noticed is that there aren't many community-developed themes out there yet.
+
+
+
+
+
 

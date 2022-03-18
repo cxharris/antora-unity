@@ -48,9 +48,25 @@ In the 3D view, you can see the camera:
 .Blender's initial camera
 image::blender-camera.png[]
 
-You can click on it to select it, when it aquires an orange contour. Hit *0* on the NUMPAD to go into camera view, where the 3D view flips to present what the camera is seeing.  This is the view that represents your renders or animations. As always, you can escape from a view by middle-button-rotating.
+You can click on it to select it - it aquires an eerie orange contour. Hit *0* on the NUMPAD to go into camera view, where the 3D view flips to present what the camera is seeing.  This is the view that represents your renders or animations. As always, you can escape from a view by middle-button-rotating.
 
 == Manipulating objects in the 3D view
+In the world of direct manipulation in Blender, shortcut keys are a way of life.
+
+To *select* an object, just left-click it and its edges usually change colour to a nice orange. I know this sounds kinda trivial, but earlier versions of Blender used a default *right-click* for selection. Apparently, there are a couple of genuine UX advantages to this, but it seems to me they must have been swamped by the disadvantage of having to remember special Blender rules above and beyond all the other time-honoured conventions of software. Anyway, it's now *left-click*.
+
+To move an object, hit the *G* key when it's selected - this grabs the object for you to place elsewhere. *G* is apparently the shortcut key for *Grab*. You can grab things like lights and cameras, as well as objects like cubes and spheres. But I know we haven't done spheres yet. When you left-click a grabbed object, it's dropped in a new location.
+
+You can also move an object using the *tools* menu in the top-left of the 3D view. If it's not visible, hit the *T* key.
+
+[#img-blender-tools]
+.Manipulation tools
+image::blender-tools.png[]
+
+
+
+
+
 
 
 
