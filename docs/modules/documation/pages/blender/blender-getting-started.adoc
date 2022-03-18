@@ -67,7 +67,7 @@ We may well explore more of these tools at some stage, but for now, check out th
 
 [#img-blender-move-manipulators]
 .Move manipulators
-image::blender-move-manipulators.png[]
+image::blender-move-manipulator.png[]
 
 Hitting *G* and pressing SHIFT - X, allows movement on all axes except X, and the same pattern applies for all the other axes.
 
@@ -75,7 +75,7 @@ Just below *move* on the manipulation tools menu is *rotate*. If you select the 
 
 [#img-blender-rotate-manipulators]
 .Rotate manipulators
-image::blender-rotate-manipulator.png[]
+image::blender-rotate-manipulators.png[]
 
 Click on the red, green or blue arcs to rotate the cube around the corresponding axes. If you get it wrong, CTRL - Z undoes your last action.
 
