@@ -48,7 +48,7 @@ In the 3D view, you can see the camera:
 .Blender's initial camera
 image::blender-camera.png[]
 
-You can click on it to select it, whene it aquires an orange contour. Hit *0* on the NUMPAD to go into camera view, where the 3D view flips to present what the camera is seeing.  This is the view that represents your renders or animations.
+You can click on it to select it, when it aquires an orange contour. Hit *0* on the NUMPAD to go into camera view, where the 3D view flips to present what the camera is seeing.  This is the view that represents your renders or animations. As always, you can escape from a view by middle-button-rotating.
 
 == Manipulating objects in the 3D view
 
