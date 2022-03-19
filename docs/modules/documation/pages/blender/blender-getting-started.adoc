@@ -96,7 +96,7 @@ In all of this section, we've been exploring a Blender mode called *object mode*
 == Manipulating geometry in Blender
 Now we're going to take a look at what Blender calls *edit mode*, where we get a chance to manipulate the corners (vertices!), edges and faces of objects. So instead of moving a static object around, we're going to change the 3D structure of the object itself.
 
-To flip into *edit mode* you can hit the *TAB* key while an object is selected, or choose *Edit Mode* from the drop-down in the *mode indicator*. When selected in this mode, the entire object is highlighted in a light orange. Pressing TAB again flips you back to the original mode.
+To flip into *edit mode* you can hit the *TAB* key while an object is selected, or choose *Edit Mode* from the drop-down in the *mode indicator*. When selected in this mode, the entire object is highlighted in a light orange. Pressing *TAB* again flips you back to the original mode.
 
 In edit mode, we get to manipulate three abstractions:
 
@@ -109,6 +109,52 @@ Again, there's a submode switch that allows you to flip between vertex editing, 
 [#img-blender-vertex-edit-face-mode]
 .Vertex, edge and face selections in edit mode
 image::blender-vertex-edge-face-mode.png[]
+
+The _corners_ of a 3D object are vertices, but they can also exist in the middle of edges - they are points that mark the boundaries between *edges*. Like its use in object mode, you can select a vertex and move it around with *G*.
+
+Select a vertex, hold SHIFT and select another one, giving us a multiple selection that again, we can move with *G*, rotate with *R* or scale with *S*.
+
+In *edge mode* and *face mode* we can perform the same range of operations on edges and faces respectively.
+
+Shortcuts *1*, *2*, and *3* on the _keyboard_ (not NUMPAD) flip you into vertext select mode, edge select mode and face select mode respectively.3
+
+In character modeling, many characters - including complex characters like humans - start off with a cube.
+
+=== Further useful editing gestures
+Hit the *E* key with a face selected, move the mouse and you'll see the face *extrude* more geometry. You can alse extrude edges or vertices.
+
+When you extrude a face, it moves along a trajectory called a *face normal* - marked with a blue line. The face normal is perpendicular to the face. IF you *don't* want it to extrude along the face normal, right-click to unconfirm and you'll be in a constraint-free extrude mode on the face, where you can just grab it with *G* and extrude as you like.
+
+*Loop cuts* are another really useful tool. As the name implies, it cuts a loop around your mesh. The shortcut key is CTRL - R but you'll no doubt have noticed a tall thin menu on the left of the 3D window when you're in edit mode - one of these buttons gives you a loop cut also: image:blender-loop-cut-icon.png[].
+
+A loop cut on a default cube might end up looking like:
+
+[#img-blender-loop-cut]
+.A loop cut in a default cube
+image::blender-loop-cut.png[]
+
+Loop cuts allow us to add additional geometry which enables us to build more detail into our models.
+
+The *extrude - E key* and *loop cut - CRTL-R* are the two most-used gestures in editing. There are more, and maybe we'll take a look at them later.
+
+== Adding objects
+In your heart of hearts, you just _knew_ there would be other objects apart from the default cube that we can add to our scenes, right?
+
+To add an object hit *SHIFT - A* or choose *Add* in the menu. You'll be offered the ability to choose from many, many objects. This includes an *armature* which allows us to set up some bones to animate our characters. More about this later!
+
+Most standard objects are under *Mesh* where you'll find planes, cubes, circles, spheres and so on.
+
+You might notice that a lot of objects have meshes that are composed of *quads* - four-sided polygons. This is a good thing - in the later stages of modeling, it becomes clear that quads deform better when you're changing things. Triangles are allowed, but they need to be placed in certain parts of a mesh where they're not going to deform. The reason is that with triangles, when you add in some bones, they don not deform very well and can easily create stretching and bad geometry artefacts.
+
+
+
+
+
+
+
+
+
+
 
 
 
