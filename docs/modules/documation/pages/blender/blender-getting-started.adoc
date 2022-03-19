@@ -104,7 +104,7 @@ In edit mode, we get to manipulate three abstractions:
 * Edges
 * Faces
 
-Again, there's a submode switch that allows you to flip between vertex editing, edge editing or face editing selections - it appears just to the right of the *mode indicator* when you are in edit mode and have a selected object:
+Again, there's a submode switch that allows you to flip between vertex editing, edge editing or face editing selections - it appears just to the right of the *mode indicator* near the top-left of your 3D view in the header area when you are in edit mode and have a selected object:
 
 [#img-blender-vertex-edit-face-mode]
 .Vertex, edge and face selections in edit mode
