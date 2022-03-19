@@ -108,7 +108,7 @@ Again, there's a submode switch that allows you to flip between vertex editing, 
 
 [#img-blender-vertex-edit-face-mode]
 .Vertex, edge and face selections in edit mode
-image::blender-vertex-edit-face-mode.png[]
+image::blender-vertex-edge-face-mode.png[]
 
 
 
