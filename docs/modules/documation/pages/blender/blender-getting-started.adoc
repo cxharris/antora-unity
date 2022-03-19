@@ -71,8 +71,6 @@ We may well explore more of these tools at some stage, but for now, check out th
 .Move manipulators
 image::blender-move-manipulator.png[]
 
-
-
 Just below *move* on the manipulation tools menu is *rotate*. If you select the cube and click *rotate*, the *rotate manipulators* appear.
 
 [#img-blender-rotate-manipulators]
@@ -89,14 +87,32 @@ Hit the *N* key with an object selected, and a menu pops up that lets you specif
 
 *ALT-R* clears any rotation, *ALT-G* clears any movement and *ALT-S* any scaling. 
 
-TIP: Somehow, *ALT-R* was clobbered and overridden by my Nvidia graphics card settings - they insist on popping up whenever I type *ALT-R*. Sucks. If this is you, launch *GeForce Experience* and look for the panel called *IN-GAME OVERLAY* an disable it with the switch on the top-right of the panel.
+TIP: Somehow, *ALT-R* was clobbered and overridden by my Nvidia graphics card settings - they insist on popping up whenever I type *ALT-R*. Sucks. If this is you, launch *GeForce Experience*, look for the panel called *IN-GAME OVERLAY* and disable it with the switch on the top-right of the panel.
 
 Hit *CTRL-A* to *apply* various operations to the object. Once applied, the current state of the property becomes the default. So *CTRL-A* > *Rotation* makes the current rotation the default, 'zero' rotation. Doing this of course nullifies what *ALT-R*, *ALT-G* and *ALT-S* might have done, because there's now nothing to 'clear' - we're at 'zero' already.
 
-In all of this section, we've been exploring a Blender mode called *object mode*, which allows you to move and manipulate objects as a whole, but not their component parts. You can see that you're in object mode by the indicator in the top left of the 3D view: image:blender-object-mode-indicator.png.
+In all of this section, we've been exploring a Blender mode called *object mode*, which allows you to move and manipulate objects as a whole, but not their component parts. You can see that you're in object mode by the *mode indicator* in the top left of the 3D view: image:blender-object-mode-indicator.png[].
 
 == Manipulating geometry in Blender
-Now we're going to take a look at what Blender calls *edit mode*, where we will get a chance to manipulate the corners (vertices!), edges and faces of objects.
+Now we're going to take a look at what Blender calls *edit mode*, where we get a chance to manipulate the corners (vertices!), edges and faces of objects. So instead of moving a static object around, we're going to change the 3D structure of the object itself.
+
+To flip into *edit mode* you can hit the *TAB* key while an object is selected, or choose *Edit Mode* from the drop-down in the *mode indicator*. When selected in this mode, the entire object is highlighted in a light orange. Pressing TAB again flips you back to the original mode.
+
+In edit mode, we get to manipulate three abstractions:
+
+* Vertices
+* Edges
+* Faces
+
+Again, there's a submode switch that allows you to flip between vertex editing, edge editing or face editing selections - it appears just to the right of the *mode indicator* when you are in edit mode and have a selected object:
+
+[#img-blender-vertex-edit-face-mode]
+.Vertex, edge and face selections in edit mode
+image::blender-vertex-edit-face-mode.png[]
+
+
+
+
 
 
 
