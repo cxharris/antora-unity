@@ -3,9 +3,9 @@
 
 An in-progress list of all the keyboard shortcuts we've encountered.
 
-[cols="1,1,1"]
+[cols="1,1,1,1"]
 |===
-| Shortcut | Meaning | Notes | mODE
+| Shortcut | Meaning | Notes | mode
 
 | A        | Select All | selects all components of an object when perhaps just one component (e.g. a vertex) might be selected | Edit
 | ALT - A  | Deselect All | In edit mode, deselects the entirety of a selected object. | Edit
