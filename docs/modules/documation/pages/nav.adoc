@@ -4,3 +4,4 @@
 ** xref:unity/ui.adoc[]
 * xref:blender/blender-basics.adoc[]
 ** xref:blender/blender-getting-started.adoc[]
+** xref:blender/blender-first-character.adoc[]

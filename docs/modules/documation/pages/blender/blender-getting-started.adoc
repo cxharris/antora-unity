@@ -55,7 +55,7 @@ In the world of direct manipulation in Blender, shortcut keys are a way of life.
 
 To *select* an object, just left-click it and its edges usually change colour to a nice orange. I know this sounds kinda trivial, but earlier versions of Blender used a default *right-click* for selection. Apparently, there are a couple of genuine UX advantages to this, but it seems to me they must have been swamped by the disadvantage of having to remember special Blender rules above and beyond all the other time-honoured conventions of software. Anyway, it's now *left-click*.
 
-To move an object, hit the *G* key when it's selected - this grabs the object for you to place elsewhere. *G* is apparently the shortcut key for *Grab*. You can grab things like lights and cameras, as well as objects like cubes and spheres. But I know we haven't done spheres yet. When you left-click a grabbed object, it's dropped in a new location. While an object is grabbed, you can hit X, Y or Z to constrain movement to one of those specific axes. If we do this - hit *G* then an axis, we can also type in a displacement along the axis along which the cube will move.
+To move an object, hit the *G* key when it's selected - this grabs the object for you to place elsewhere. *G* is apparently the shortcut key for *Grab*. You can grab things like lights and cameras, as well as objects like cubes and spheres. But I know we haven't done spheres yet. When you left-click a grabbed object and release, it's dropped in a new location. While an object is grabbed, you can hit X, Y or Z to constrain movement to one of those specific axes. If we do this - hit *G* then an axis, we can also type in a displacement along the axis along which the cube will move.
 
 
 
@@ -112,20 +112,20 @@ image::blender-vertex-edge-face-mode.png[]
 
 The _corners_ of a 3D object are vertices, but they can also exist in the middle of edges - they are points that mark the boundaries between *edges*. Like its use in object mode, you can select a vertex and move it around with *G*.
 
-Select a vertex, hold SHIFT and select another one, giving us a multiple selection that again, we can move with *G*, rotate with *R* or scale with *S*.
+Select a vertex, hold *SHIFT* and select another one, giving a multiple selection that again, we can move with *G*, rotate with *R* or scale with *S*.
 
 In *edge mode* and *face mode* we can perform the same range of operations on edges and faces respectively.
 
-Shortcuts *1*, *2*, and *3* on the _keyboard_ (not NUMPAD) flip you into vertext select mode, edge select mode and face select mode respectively.3
+Shortcuts *1*, *2*, and *3* on the _keyboard_ (not NUMPAD) flip you into vertex select mode, edge select mode and face select mode respectively.
 
 In character modeling, many characters - including complex characters like humans - start off with a cube.
 
-=== Further useful editing gestures
+=== More useful editing gestures
 Hit the *E* key with a face selected, move the mouse and you'll see the face *extrude* more geometry. You can alse extrude edges or vertices.
 
-When you extrude a face, it moves along a trajectory called a *face normal* - marked with a blue line. The face normal is perpendicular to the face. IF you *don't* want it to extrude along the face normal, right-click to unconfirm and you'll be in a constraint-free extrude mode on the face, where you can just grab it with *G* and extrude as you like.
+When you extrude a face, it moves along a trajectory called a *face normal* - marked with a blue line. The face normal is perpendicular to the face. If you *don't* want it to extrude along the face normal, right-click to unconfirm and you'll be in a constraint-free extrude mode on the face, where you can just grab it with *G* and extrude as you like.
 
-*Loop cuts* are another really useful tool. As the name implies, it cuts a loop around your mesh. The shortcut key is CTRL - R but you'll no doubt have noticed a tall thin menu on the left of the 3D window when you're in edit mode - one of these buttons gives you a loop cut also: image:blender-loop-cut-icon.png[].
+*Loop cuts* are another really useful tool. As the name implies, it cuts a loop around your mesh. The shortcut key is *CTRL - R* but you'll no doubt have noticed a tall thin menu on the left of the 3D window when you're in edit mode - one of these buttons gives you a loop cut also: image:blender-loop-cut-icon.png[].
 
 A loop cut on a default cube might end up looking like:
 
@@ -144,7 +144,7 @@ To add an object hit *SHIFT - A* or choose *Add* in the menu. You'll be offered 
 
 Most standard objects are under *Mesh* where you'll find planes, cubes, circles, spheres and so on.
 
-You might notice that a lot of objects have meshes that are composed of *quads* - four-sided polygons. This is a good thing - in the later stages of modeling, it becomes clear that quads deform better when you're changing things. Triangles are allowed, but they need to be placed in certain parts of a mesh where they're not going to deform. The reason is that with triangles, when you add in some bones, they don not deform very well and can easily create stretching and bad geometry artefacts.
+You might notice that a lot of objects have meshes that are composed of *quads* - four-sided polygons. This is a good thing - in the later stages of modeling, it becomes clear that quads deform better when you're changing things. Triangles are allowed, but they need to be placed in certain parts of a mesh where they're not going to deform. The reason is that with triangles, when you add in some bones, they do not deform very well and can easily create stretching and bad geometry artefacts.
 
 
 

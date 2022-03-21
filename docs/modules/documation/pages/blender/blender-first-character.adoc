@@ -1,0 +1,12 @@
+= Our first character animation
+:navtitle: First character
+
+Gonna be honest here, what we'll end up with after a couple of hours work is not going to look pretty. It's certainly not what I set out to create when I decided to learn how to create animated characters in Blender. It's gonna be ugly and underwhelming. So ugly man. But with Blender, you can't get to the good stuff without experiencing some of the downright lousy stuff first. It's like a lot of fields in life - you can't run until you can walk! 
+
+But there's a good side to all this. We'll learn some absolutely vital techniques when it comes to modeling characters - more shortcuts and more learned experiences that will stand us in good stead for leveling up quickly, and building characters that we can be proud of.
+
+== Modeling Box Bastard's  head
+
+
+
+

@@ -1,0 +1,14 @@
+= Blender shortcuts
+:navtitle: Keyboard shortcuts
+
+An in-progress list of all the keyboard shortcuts we've encountered.
+
+[cols="1,1,1"]
+|===
+| Shortcut | Meaning | Preconditions/notes
+| G        | Grab    | Grab/move a currently-selected entity. Works in object and edit mode
+| MIDDLE MOUSE | Tumble | Tumble around a scene in object or edit mode  
+| R        | Rotate    | Rotate a currently-selected entity about the 3D cursor (... possibly other options) in object or edit mode. It appears that the idea of rotating a single vertex is meaningless
+| SCROLL WHEEL | Zoom  | Zoom into or out of the scene in object or edit mode
+| SHIFT - MIDDLE MOUSE | Pan | Pan around a scene in the obect or edit mode
+|=== 
