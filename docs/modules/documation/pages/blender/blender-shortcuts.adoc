@@ -6,7 +6,12 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 [cols="1,1,1"]
 |===
 | Shortcut | Meaning | Preconditions/notes
+
+| A        | Select All | In edit mode, selects all components of an object when perhaps just one component (e.g. a vertex) might be selected
+| ALT - A  | Deselect All | In edit mode, deselects the entirety of a selected object.
+| E        | Extrude    | Extrude a face - by default along the face normal. In edit mode with a face selected.
 | G        | Grab    | Grab/move a currently-selected entity. Works in object and edit mode
+| G - X,Y,Z | Constrained grab | Constrain the grab to make the object move on the X, Y or Z axes respectively. Hitting SHIFT as well makes the move happen in smaller increments.
 | MIDDLE MOUSE | Tumble | Tumble around a scene in object or edit mode  
 | R        | Rotate    | Rotate a currently-selected entity about the 3D cursor (... possibly other options) in object or edit mode. It appears that the idea of rotating a single vertex is meaningless
 | SCROLL WHEEL | Zoom  | Zoom into or out of the scene in object or edit mode

@@ -5,8 +5,45 @@ Gonna be honest here, what we'll end up with after a couple of hours work is not
 
 But there's a good side to all this. We'll learn some absolutely vital techniques when it comes to modeling characters - more shortcuts and more learned experiences that will stand us in good stead for leveling up quickly, and building characters that we can be proud of.
 
-== Modeling Box Bastard's head
+== Creating the character model
 
+=== Modeling Box Bastard's head
+. Let's start off with a new scene containing the default cube
+. Hit *G* to grab, and *Z* to constrain to the Z-axis, then lift the cube up to about 5m. When you've released the mouse, you can hit *N* and check the numbers in the transform to see if they make sense - adjust the Z value of the *Location* slot to 5m if it's wildly different.
+. All the transformations occur with respect to the *origin point* - you can see it as an orange dot in the centre of the cube. But we want our character to nod its head, which means rotating about an origin that is at the bottom of the cube, not in the middle.
++
+One way to do this is:
+* Hit *Tab* to take the cube into edit mode
+* Hit *G* to grab it
+* Hit *Z* to constrain the movement to the Z-axis
+* Move the cube with the mouse - you'll see that the origin point remains where it was, so you can now move the cube just enough for the origin point to be at the bottom of the cube, not the centre
+* Hit *Tab* again to get back to object mode
+
+=== Creating the body
+. Hit *SHIFT - A* and choose *Mesh* > *Cube* to create a second cube at the world origin.
+. Hit *G* and *Z* to bring the cube up to touch the head/first cube.
+. Hit *S* to scale it down a little bit.
+. Then *S* and *Z* to scale it down vertically a bit more, then *G* and *Z* to once more bring it in contact with the head again.
+
+=== Modeling the arms
+. Let's start with another cube - but this time, instead of simply creating it, duplicate the one we already have by selecting the body and hitting *SHIFT - D*.
+. Press *G* then *X* to bring the new arm out, so that it is next to the body, with a small gap.
+. Press *S* and *X* to scale it on the X-axis, then *S* and *Y* to scale it on the Y-axis, to make it more like an arm - a narrow square column rather than the wider body.
+. Hit *G* and *X* to once more bring it in close (but not touching) the body, and *G* *Z* to bring it down a fraction.
+. Fix the arm's pivot point so that it lies at the top, by entering edit mode, and using *G* *Z* to move the arm until the pivot point is correct. Finally, go back into object mode and use *G* *Z* again if necessary to bring it back up.
+. In object mode, select the body and press *G* *S* and make it a little longer - so that it's, say, one and a half arm lengths long, adjusting the position of the body with *G* *Z* to ensure it doesn't intersect with the head. 
+. In object mode, select the arm and press *SHIFT - D* and *X* to duplicate and move it to the corresponding position on the other side of the body.
+
+=== Legs
+. Select the body cube in object mode and press *SHIFT - D* and *G* *Z* to move a new copied cube down below the body.
+. Hit *S* to scale it down and then *S* *X* to scale it on the X-axis and *S* *Y* to scale it on the Y-axis.
+. Press *1* on the NUMPAD to go into front view, *G* to position it as, say, the left leg, and adjust the pivot so that it's at the top of the leg - recall that this happens in *edit* mode when you can press *G* and *Z* to move the leg independently of its pivot.
+. Hit *SHIFT - D* to duplicate the leg, and *X* to move it to the mirror position of the first leg. If in doubt, press *NUMPAD 1* and make some gentle adjustments to ensure the two legs are symmetrical.
+
+=== Final touches
+. Select the head and hit *TAB* to go into edit mode. 
+. Press *CTRL - B*, drag the mouse *out* a little bit and see the bevel form. Click the left mouse to fix the bevel amount and hit *TAB* to return to object mode.
+. In object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges render smoother. 
 
 
 
