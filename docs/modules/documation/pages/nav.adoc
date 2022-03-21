@@ -5,3 +5,4 @@
 * xref:blender/blender-basics.adoc[]
 ** xref:blender/blender-getting-started.adoc[]
 ** xref:blender/blender-first-character.adoc[]
+** xref:blender/blender-shortcuts.adoc[]
