@@ -45,5 +45,6 @@ One way to do this is:
 . Press *CTRL - B*, drag the mouse *out* a little bit and see the bevel form. Click the left mouse to fix the bevel amount and hit *TAB* to return to object mode.
 . In object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges render smoother. 
 
-
+== Swapping out the grey
+Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
 
