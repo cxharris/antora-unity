@@ -51,18 +51,49 @@ We will make further adjustments to this body when we've seen how the character'
 [#img-blender-character-arms-added]
 .Adding arms to our character
 image::blender-character-arms-added.png[]
++
+You can see the origin point of the arm on the left (as we look at it) has been moved to the shoulder from the elbow, as we did in step 6.
 
 === Legs
-. Select the body cube in object mode and press *SHIFT - D* and *G* *Z* to move a new copied cube down below the body.
+. Select the body cube in object mode and press *SHIFT - D* and then *Z* to move a copy of the body below the original.s
 . Hit *S* to scale it down and then *S* *X* to scale it on the X-axis and *S* *Y* to scale it on the Y-axis.
 . Press *1* on the NUMPAD to go into front view, *G* to position it as, say, the left leg, and adjust the pivot so that it's at the top of the leg - recall that this happens in *edit* mode when you can press *G* and *Z* to move the leg independently of its pivot.
 . Hit *SHIFT - D* to duplicate the leg, and *X* to move it to the mirror position of the first leg. If in doubt, press *NUMPAD 1* and make some gentle adjustments to ensure the two legs are symmetrical.
++
+[#img-blender-character-legs-added]
+.Adding legs to our character
+image::blender-character-legs-added.png[]
 
 === Final touches
-. Select the head and hit *TAB* to go into edit mode. 
-. Press *CTRL - B*, drag the mouse *out* a little bit and see the bevel form. Click the left mouse to fix the bevel amount and hit *TAB* to return to object mode.
-. In object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges render smoother. 
+. Select the head and hit *TAB* to go into edit mode, then *A* to select all parts of the head. 
+. Press *CTRL - B*, drag the mouse *out* a little bit and see a *bevel* form. Click the left mouse to fix the bevel amount and notice a *Bevel* window has opened, offering us some parameters we might wish to apply to the operation. If you can't see it, you might have to open the window by clicking on its tab: image:blender-inline-bevel-button.png[].
++
+A *bevel* is a geometric operation that adds vertices around edges so they are not as sharp. 
+. Look at the *Bevel* window:
++
+[#img-blender-bevel-window]
+.The Bevel window
+image::blender-bevel-window.png[]
++
+The *Segments* setting determines the geometric complexity of the bevel - set it to *3* and see how the geometry changes on our character's head:
++
+[#img-blender-character-bevel-head]
+.Adding a bevel to the character's head
+image::blender-character-bevel-head.png[]
++
+. Repeatedly hit *CTRL Z* to return to the unbevelled head and hit *TAB* to get into object mode. Now that you know how to apply a bevel, we're going to apply a bevel to the whole model in one swoop. 
+. Box-select the *whole model* in object mode and hit *TAB* to get into edit mode. 
+. Hit *CTRL B* and once again move it away from the model - you'll see bevels develop on all components of our character.
++
+[#img-blender-character-all-beveled]
+.All beveled up
+image::blender-character-all-beveled.png[]
+. Back in object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges render smoother. 
 
 == Swapping out the grey
 Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
++
+[#img-blender-smooth-shaded-character]
+.Our final, smooth-shaded charcter
+image::blender-smooth-shaded-character.png[]
 
