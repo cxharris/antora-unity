@@ -30,7 +30,7 @@ Note the orange dot - the origin - is at the base of the head cube, not its cent
 . Hit *SHIFT - A* and choose *Mesh* > *Cube* to create a second cube at the world origin.
 . Hit *G* and *Z* to bring the cube up to touch the head/first cube.
 . Hit *S* to scale it down a little bit.
-. Then *S* and *Z* to scale it down vertically a bit more, then *G* and *Z* to once more bring it in contact with the head again.
+. Then *S* and *Z* to scale it down vertically a bit more, then *G* and *Z* to once more bring it into contact with the head.
 +
 [#img-blender-character-body]
 .Our first shot at creating a body for our character
@@ -39,13 +39,18 @@ image::blender-character-body.png[]
 We will make further adjustments to this body when we've seen how the character's arms match up to it.
 
 === Modeling the arms
-. Let's start with another cube - but this time, instead of simply creating it, duplicate the one we already have by selecting the body and hitting *SHIFT - D*.
+. Let's start with another cube - but this time, instead of simply creating it, we'll duplicate the one we already have by selecting the body and hitting *SHIFT - D*. This is sometimes a little easier in *front orthographic* view - *NUMPAD 1*.
 . Press *G* then *X* to bring the new arm out, so that it is next to the body, with a small gap.
-. Press *S* and *X* to scale it on the X-axis, then *S* and *Y* to scale it on the Y-axis, to make it more like an arm - a narrow square column rather than the wider body.
-. Hit *G* and *X* to once more bring it in close (but not touching) the body, and *G* *Z* to bring it down a fraction.
+. Press *S* and *X* to scale it on the X-axis, then *G* and *X* again to bring it back close to the body.
+. In *right orthographic* view - *NUMPAD 3* - p ress *S* and *Y* to scale it on the Y-axis, to make it more like an arm - a narrow square column rather than the wider body.
+. Press *G* and *Z* to bring it down a fraction.
 . Fix the arm's pivot point so that it lies at the top, by entering edit mode, and using *G* *Z* to move the arm until the pivot point is correct. Finally, go back into object mode and use *G* *Z* again if necessary to bring it back up.
-. In object mode, select the body and press *G* *S* and make it a little longer - so that it's, say, one and a half arm lengths long, adjusting the position of the body with *G* *Z* to ensure it doesn't intersect with the head. 
-. In object mode, select the arm and press *SHIFT - D* and *X* to duplicate and move it to the corresponding position on the other side of the body.
+. In object mode, select the body and press *S* *Z* and make it a little longer - so that it's, say, one and a half arm lengths long, adjusting the position of the body with *G* *Z* so that it once again just contacts the head. 
+. In object mode, hit *NUMPAD 1* to get back into *front orthographic* view, select the arm and press *SHIFT - D* and *X* to duplicate and move it to the corresponding position on the other side of the body.
++
+[#img-blender-character-arms-added]
+.Adding arms to our character
+image::blender-character-arms-added.png[]
 
 === Legs
 . Select the body cube in object mode and press *SHIFT - D* and *G* *Z* to move a new copied cube down below the body.
