@@ -9,10 +9,11 @@ But there's a good side to all this. We'll learn some absolutely vital technique
 
 === Modeling the head
 . Let's start off with a new scene containing the default cube.
-. Hit *G* to grab, and *Z* to constrain to the Z-axis, then lift the cube up to about 5m. When you've released the mouse, you can hit *N* and check the numbers in the transform to see if they make sense - adjust the Z value of the *Location* slot to 5m if it's wildly different.
+. Hit *G* to grab, and *Z* to constrain to the Z-axis, then lift the cube up to about 5m. When you've released the mouse, you can hit *N* and check the numbers in the transform to see if they make sense - adjust the *Z* value of the *Location* slot to 5m if it's wildly different.
 . All the transformations occur with respect to the *origin point* - you can see it as an orange dot in the centre of the cube. But we might want our character to nod its head, which means rotating about an origin that is at the bottom of the cube where the neck might be, not in the middle.
 +
-One way to do this is:
+One way to move the origin from the centre to the neckline is:
+
 * Hit *Tab* to take the cube into edit mode, and press *A* to select all of its parts.
 * Hit *G* to grab it and *Z* to constrain further movement to the Z-axis.
 * Move the cube up with the mouse - you'll see that the origin point remains where it was, so you can now move the cube just enough for the origin point to be at the bottom of the cube, not the centre.
