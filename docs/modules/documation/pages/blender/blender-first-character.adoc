@@ -151,8 +151,8 @@ Let's add a plane to create the illusion that our character is standing on the f
 . Scale the plane in the *X* and *Y* directions to make it bigger - use techniques that you've already learned: *S* *X* and *S* *Y*.
 . Move the plane in the *Z* direction using *G* *Z* and the mouse - position the plane just underneath our character's legs/feet. It's easier to do this in an orthographic view - use, say, *NUMPAD 1* to get there.
 +
-[#img-blender-final-character-standing-on-plane]
+[#img-blender-character-standing-on-plane]
 .Our virulently pink character standing on a plane
-image:blender-final-character-standing-on-plane.png[]
+image:blender-character-standing-on-plane.png[]
 
 
