@@ -147,6 +147,7 @@ Now that we understand how to do this, let's revert back so that all of our char
 
 === Adding a floor for our character to stand on
 Let's add a plane to create the illusion that our character is standing on the floor.
+
 . Press *SHIFT A* and choose *Mesh* > *Plane*.
 . Scale the plane in the *X* and *Y* directions to make it bigger - use techniques that you've already learned: *S* *X* and *S* *Y*.
 . Move the plane in the *Z* direction using *G* *Z* and the mouse - position the plane just underneath our character's legs/feet. It's easier to do this in an orthographic view - use, say, *NUMPAD 1* to get there.
