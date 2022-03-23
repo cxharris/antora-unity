@@ -1,9 +1,11 @@
 = Our first character animation
 :navtitle: First character
 
-Gonna be honest here, what we'll end up with after a couple of hours work is not going to look pretty. It's certainly not what I set out to create when I decided to learn how to create animated characters in Blender. It's gonna be ugly and underwhelming. So ugly man. But with Blender, you can't get to the good stuff without experiencing some of the downright lousy stuff first. It's like a lot of fields in life - you can't run until you can walk! 
+Gonna be honest here, what we'll end up with half an hour's work is not going to look pretty. It'll be ugly. But remember that _the iron is forged in the _fire - we all hate being beginners, but we're actually not beginners for very long. So have hope for the wonderful journey ahead!
 
-But there's a good side to all this. We'll learn some absolutely vital techniques when it comes to modeling characters - more shortcuts and more learned experiences that will stand us in good stead for leveling up quickly, and building characters that we can be proud of.
+We'll learn some absolutely vital techniques when it comes to modeling characters - shortcuts and more learned experiences that will stand us in good stead for leveling up quickly, and eventualaly building characters that we can be proud of.
+
+And did I say _shortcuts_? To be proficient at Blender is all about shortcut keys. The menus, while helpful for uncommon tasks, take far too long for common tasks - so you're going to have to learn the shortcuts if you want to make the grade. 
 
 == Creating the barely-human character model
 
@@ -96,7 +98,7 @@ image::blender-smooth-shaded-character.png[]
 
 As I said at the beginning, it's a little ugly but it's given us practice in building these kinds of models - and in fact, we should all feel confident that we could build many more similar models. Things won't begin to seem to tie together, however, until we understand how to _colour_ our models.
 
-== Swapping out the grey
+== Shades of grey
 Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
 
 === Adding colour to the character's head
@@ -105,11 +107,11 @@ Our character is a bit bland at the moment - all in grey. Let's liven him up wit
 +
 [#img-blender-material-properties-icon]
 .The location of the material properties icon
-image:blender-material-properties-icon.png[]
+image::blender-material-properties-icon.png[]
 +
 The *properties window* fills with a bunch of complex-looking settings, but we're only going to focus on a couple of them at this stage - essentially, the properties window is displaying the properties of the default material assigned to the character's head.
 +
-The properties window contains two collapsible panels: *Preview* and *Surface* but it's *Surface* where all the action occurs.
+The properties window contains two collapsible panels: *Preview* and *Surface* but it's *Surface* where all the action happens.
 . Observe that the *Surface* field in the *Surface* panel (ugh!) has an entry called *Principled BSDF*. If you click on it, you'll see that there are very many other options available, but a great deal of the time, *Principled BSDF* is going to be our choice, and it certainly is in this exercise.
 +
 Principled BSDF is the modern go-to material because using it, you can replicate the effects of many of those other options - it's quite a new feature (since version 2.79) and it's got the community quite excited. It's an _ubershader_ - and with a name like that, I'd just use it and move on if I were you.
@@ -120,11 +122,11 @@ This is because our viewport is displaying in *solid* mode, whereas what we're l
 +
 [#img-blender-solid-material-preview-mode]
 .Blender's solid and material preview viewport modes
-image:blender-solid-material-preview-mode.png[]
+image::blender-solid-material-preview-mode.png[]
 +
 Once you've selected material preview mode, our character's head is displayed in your chosen colour. It's a good idea to name your materials when you've created them, so click in the field where it says *Material.001* and change it to something more meaningful - I've named mine *CharacterPink*. 
 +
-Another way to get into material preview mode is simply to hit *Z* and choose your required render mode from the four options. The available options are accessible via numeric shortcuts if you prefer - just review their labels.z
+Another way to get into material preview mode is simply to hit *Z* and choose your required render mode from the four options. The available options are accessible via numeric shortcuts if you prefer - just review their labels.
 
 === Adding colour to the rest of our character's parts
 . We have the head coloured, so how do we colour all the other character parts? There are two ways:
@@ -137,13 +139,13 @@ image:blender-choose-material.png[]
 +
 Notice also that in the *properties window* next to the name of the material is the number *6*. This means that the material is applied to six different 'users' or objects. If we changed the base colour, you would see that the colour of all objects changed, because of the linking. 
 +
-But what if in a scene with linked objects, we only want to change the colour of the head? Well, with the head selected, click the number (6 in our case) which unlinks just the head so that you can now recolour it on its own. In the jargon, we've made a 'single user' material for the head. If you do this, remember to give your new head colour a meaningful name.
+But what if in a scene with linked objects, we only want to change the colour of the head? Well, with the head selected, click the number (6 in our case) which unlinks just the head so that you can now recolour it on its own - and in so doing, the number flips to *5*. In the jargon, we've made a 'single user' material for the head - the remaining *5* users all use the material assigned to the body parts, but not the head. If you do this, remember to give your new head colour a meaningful name.
 +
 [#img-blender-changing-head-colour]
 .Changing just the colour of our character's head
-image:blender-changing-head-colour.png[]
+image::blender-changing-head-colour.png[]
 +
-Now that we understand how to do this, let's revert back so that all of our character's parts are coloured the same.
+Now that we understand how to do this, let's revert back so that all of our character's parts are coloured the same - I guess multiple *CTRL Z*s will do, but be sure to stop at the right place!
 
 === Adding a floor for our character to stand on
 Let's add a plane to create the illusion that our character is standing on the floor.
@@ -154,6 +156,17 @@ Let's add a plane to create the illusion that our character is standing on the f
 +
 [#img-blender-character-standing-on-plane]
 .Our virulently pink character standing on a plane
-image:blender-character-standing-on-plane.png[]
+image::blender-character-standing-on-plane.png[]
 
+== Facial features
+Our character is looking a bit blank - let's give him/her some eyes and a mouth, and learn a couple of new Blender techniques as we go.
+
+=== The eyes have it
+. *SHIFT A* and *Mesh* > *UV Sphere* creates a sphere - use *G* *Z* to bring it up above the surface of our ground plane. It is, however, a bit big - too big for one of our character's eyes.
+. Right-click on the sphere and choose *Shade Smooth* to reduce its blockiness.
+. *G* *Y* on the sphere and bring it forward so that you can see its top and hit *TAB* to go into edit mode. You'll see that the sphere's geometry looks very like an eye pointing upwards - that top circle of triangles looks very like an iris:
++
+[#img-blender-character-eye-iris]
+.A UV sphere looks eerily like an eye pointing upwards
+image::blender-character-eye-iris.png[]
 

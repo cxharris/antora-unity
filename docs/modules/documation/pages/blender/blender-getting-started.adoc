@@ -11,7 +11,7 @@ image::blender-launch-screen.png[]
 +
 Highlighted above, Blender's initial interface decomposes into five regions.
 
-* The main window outlined in red which contains a camera, a lamp and a default cube is called the *3D view*. Most of our work happens here.
+* The main window outlined in red which contains a camera, a lamp and a default cube is called the *3D view*. Most of our work happens here. The default cube is simply a single 3D object placed at the world origin - a kind of statement that from little acorns great oak trees grow. And you'll see cubes used to great effect in later lessons - lots of swish 3D surfaces and models begin life as mere cubes. 
 * The thin window at the bottom outlined in pink is the *timeline*, which allows you to animate objects through time.
 * The window outlined in blue is called the *properties* window and it allows you to list many different properties of selected objects.
 * The window outlined in green is called the *outliner* which displays a tree structure representing all objects in your scene.
