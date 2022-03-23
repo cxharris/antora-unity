@@ -83,17 +83,31 @@ image::blender-character-bevel-head.png[]
 +
 . Repeatedly hit *CTRL Z* to return to the unbevelled head and hit *TAB* to get into object mode. Now that you know how to apply a bevel, we're going to apply a bevel to the whole model in one swoop. 
 . Box-select the *whole model* in object mode and hit *TAB* to get into edit mode. 
-. Hit *CTRL B* and once again move it away from the model - you'll see bevels develop on all components of our character.
+. Hit *CTRL B* and once again move it away from the model - you'll see bevels develop on all components of our character, click the left mouse to confirm the new bevels.
 +
 [#img-blender-character-all-beveled]
 .All beveled up
 image::blender-character-all-beveled.png[]
-. Back in object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges render smoother. 
-
-== Swapping out the grey
-Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
+. Back in object mode, left-click and drag to box-select the entire model, right-click and choose *Shade Smooth* - which applies some algorithms to make the edges and shadows render more smoothly. It makes the segments of our bevel operation less hard-edged and obvious.
 +
 [#img-blender-smooth-shaded-character]
 .Our final, smooth-shaded charcter
 image::blender-smooth-shaded-character.png[]
 
+As I said at the beginning, it's a little ugly but it's given us practice in building these kinds of models - and in fact, we should all feel confident that we could build many more similar models. Things won't begin to seem to tie together, however, until we understand how to _colour_ our models.
+
+== Swapping out the grey
+Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
+
+=== Adding colour to the character's head
+. Select the head in object mode.
+. Select the *material properties* icon on the *properties* window: image:blender-material-properties-icon.png[]
++
+The *properties window* fills with a bunch of complex-looking settings, but we're going to take this one step at a time.
+. Click the *-* (minus) button in the properties window to remove the single material: 
++
+[#img-blender-remove-initial-material]
+.Removing the initial material
+image::blender-remove-initial-material.png[]
++
+Everything looks a little less busy in the properties window now!

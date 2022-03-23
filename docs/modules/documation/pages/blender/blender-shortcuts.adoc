@@ -16,6 +16,7 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 | MIDDLE MOUSE | Tumble | Tumble around a scene | Object or edit
 | R        | Rotate    | Rotate a currently-selected entity about the 3D cursor (... possibly other options) | Object or edit
 | SCROLL WHEEL | Zoom  | Zoom into or out of the scene | Object or edit
+| SHIFT - A | Add | Opens the *Add* menu | Object
 | SHIFT - MIDDLE MOUSE | Pan | Pan around a scene | Object or edit
 | Z | Visual Mode | Allows flipping between wireframe, solid, material preview or rendered modes | Object or edit
 |=== 
