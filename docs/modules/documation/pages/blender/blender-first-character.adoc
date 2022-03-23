@@ -83,7 +83,7 @@ image::blender-character-bevel-head.png[]
 +
 . Repeatedly hit *CTRL Z* to return to the unbevelled head and hit *TAB* to get into object mode. Now that you know how to apply a bevel, we're going to apply a bevel to the whole model in one swoop. 
 . Box-select the *whole model* in object mode and hit *TAB* to get into edit mode. 
-. Hit *CTRL B* and once again move it away from the model - you'll see bevels develop on all components of our character, click the left mouse to confirm the new bevels.
+. Hit *CTRL B* and once again move the mouse cursor away from the model (but don't click until you're ready) - you'll see bevels develop on all components of our character, click the left mouse to confirm the new bevels. If you get it wrong, remember *CTRL Z* is your friend!
 +
 [#img-blender-character-all-beveled]
 .All beveled up
@@ -101,13 +101,58 @@ Our character is a bit bland at the moment - all in grey. Let's liven him up wit
 
 === Adding colour to the character's head
 . Select the head in object mode.
-. Select the *material properties* icon on the *properties* window: image:blender-material-properties-icon.png[]
+. Select the *material properties* icon on the *properties* window: 
 +
-The *properties window* fills with a bunch of complex-looking settings, but we're going to take this one step at a time.
-. Click the *-* (minus) button in the properties window to remove the single material: 
+[#img-blender-material-properties-icon]
+.The location of the material properties icon
+image:blender-material-properties-icon.png[]
 +
-[#img-blender-remove-initial-material]
-.Removing the initial material
-image::blender-remove-initial-material.png[]
+The *properties window* fills with a bunch of complex-looking settings, but we're only going to focus on a couple of them at this stage - essentially, the properties window is displaying the properties of the default material assigned to the character's head.
 +
-Everything looks a little less busy in the properties window now!
+The properties window contains two collapsible panels: *Preview* and *Surface* but it's *Surface* where all the action occurs.
+. Observe that the *Surface* field in the *Surface* panel (ugh!) has an entry called *Principled BSDF*. If you click on it, you'll see that there are very many other options available, but a great deal of the time, *Principled BSDF* is going to be our choice, and it certainly is in this exercise.
++
+Principled BSDF is the modern go-to material because using it, you can replicate the effects of many of those other options - it's quite a new feature (since version 2.79) and it's got the community quite excited. It's an _ubershader_ - and with a name like that, I'd just use it and move on if I were you.
+. The next field is *Base Color* - click in the field and choose a colour for the character's head. When you do, notice that the colour of the model in the 3D view doesn't change.
++
+This is because our viewport is displaying in *solid* mode, whereas what we're looking for is *material preview* mode. 
+. Click the icon for *material preview* mode in the top-right of the 3d view:
++
+[#img-blender-solid-material-preview-mode]
+.Blender's solid and material preview viewport modes
+image:blender-solid-material-preview-mode.png[]
++
+Once you've selected material preview mode, our character's head is displayed in your chosen colour. It's a good idea to name your materials when you've created them, so click in the field where it says *Material.001* and change it to something more meaningful - I've named mine *CharacterPink*. 
++
+Another way to get into material preview mode is simply to hit *Z* and choose your required render mode from the four options. The available options are accessible via numeric shortcuts if you prefer - just review their labels.z
+
+=== Adding colour to the rest of our character's parts
+. We have the head coloured, so how do we colour all the other character parts? There are two ways:
+.. You can click on an element - say an arm - and then click the *down arrow* in the properties window to browse and select the colour you want:
++
+[#img-blender-choose-material]
+.Choosing a material to apply to another component
+image:blender-choose-material.png[]
+.. Alternatively, in object mode, you can box-select everything except the head, then *SHIFT CLICK* to select the head (notice that the last in a chain of selected objects is outlined in a lighter shade of orange), and hit *CTRL L* (link) and choose *Link Materials* - the head colour is propagated to all the other parts.
++
+Notice also that in the *properties window* next to the name of the material is the number *6*. This means that the material is applied to six different 'users' or objects. If we changed the base colour, you would see that the colour of all objects changed, because of the linking. 
++
+But what if in a scene with linked objects, we only want to change the colour of the head? Well, with the head selected, click the number (6 in our case) which unlinks just the head so that you can now recolour it on its own. In the jargon, we've made a 'single user' material for the head. If you do this, remember to give your new head colour a meaningful name.
++
+[#img-blender-changing-head-colour]
+.Changing just the colour of our character's head
+image:blender-changing-head-colour.png[]
++
+Now that we understand how to do this, let's revert back so that all of our character's parts are coloured the same.
+
+=== Adding a floor for our character to stand on
+Let's add a plane to create the illusion that our character is standing on the floor.
+. Press *SHIFT A* and choose *Mesh* > *Plane*.
+. Scale the plane in the *X* and *Y* directions to make it bigger - use techniques that you've already learned: *S* *X* and *S* *Y*.
+. Move the plane in the *Z* direction using *G* *Z* and the mouse - position the plane just underneath our character's legs/feet. It's easier to do this in an orthographic view - use, say, *NUMPAD 1* to get there.
++
+[#img-blender-final-character-standing-on-plane]
+.Our virulently pink character standing on a plane
+image:blender-final-character-standing-on-plane.png[]
+
+
