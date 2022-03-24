@@ -201,3 +201,28 @@ image::blender-character-mouth-mirrored.png[]
 [#img-blender-character-mouth-rotate-edges]
 .Our character's mouth with both mirrored sides 'clipped' together and the edges rotated slightly
 image::blender-character-mouth-rotate-edges.png[]
+. Use *G* *Z* on the same two rightmost vertices to lift them up a little.
+. With those same two vertices selected in edit mode, hit *E*e to extrude a rectangle and left-click.
++
+[#img-blender-character-mouth-extrude]
+.Working on the mouth shape by extruding the terminal vertices
+image::blender-character-mouth-extrude.png[]
+. Now hit *R* to rotate a few degrees as before.
++
+[#img-blender-character-mouth-2ndrotate]
+.Working on the mouth with more rotating
+image::blender-character-mouth-2ndrotate.png[]
+. Hit *CTRL R* to create a *loop cut*, and then move the topmost of the two new vertices down a little. We've not dealt with loop cuts before, but it creates a loop of one or more edges along a ring of quad faces. In our case, our 'ring' of quad faces is a single quad, and so the result is more geometry in the mouth, allowing us to shape it more delicately.
++
+[#img-blender-character-mouth-loopcut]
+.Working on the mouth with a loop cut
+image::blender-character-mouth-loopcut.png[]
++
+In the screenshot, you can see a new edge - the second from the left - and where the selected vertex has been dropped just a little to add more definition to the mouth.
+. Lift the lower vertex that's second from the right a little - select, *G* *Z* and mouse.
+. Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - to make it a 3D mouth instead of a planar figure.
++
+[#img-blender-character-mouth-extrude-backwards]
+.Extruding the whole mouth backwards
+image::blender-character-mouth-extrude-backwards.png[]
++
