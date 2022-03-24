@@ -169,4 +169,18 @@ Our character is looking a bit blank - let's give him/her some eyes and a mouth,
 [#img-blender-character-eye-iris]
 .A UV sphere looks eerily like an eye pointing upwards
 image::blender-character-eye-iris.png[]
+. Rotate the eye so that the iris is in a better orientation - hit *R* to rotate, *X* to nominate the X-axis and then type *90* to specify a 90 degree rotation. Note how it's possible to specify a specific angle of rotation - it's only possible when the context is right, but it works with *G* and *S* as well as *R*, with suitable units.
+. Scale the sphere, and move it to where our character will need an eye - use our usual techniques in object mode.
+. *SHIFT D* *X* to duplicate it and move it to the right position for the other eye.
++
+[#img-blender-character-with-eyes]
+.A full complement of eyes
+image::blender-character-with-eyes.png[]
 
+=== Adding a mouth
+. Start the mouth off by pressing *SHIFT A* > *Mesh* > *Plane*.
+. *G* *Z* to move the plain up roughly to mouth level, then *R* *X* *90* to rotate it 90 degrees, and finally *G* *Y* to bring the plane forward to the front of the head where it can be seen. Scale it with *S* and adjust.
++
+[#img-blender-character-mouth-in-progress]
+.The first stages of building a mouth
+image::blender-character-mouth-in-progress.png[
