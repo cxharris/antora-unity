@@ -184,6 +184,7 @@ image::blender-character-with-eyes.png[]
 [#img-blender-character-mouth-in-progress]
 .The first stages of building a mouth
 image::blender-character-mouth-in-progress.png[]
+TIP: It can be helpful to be in orthographic front view to perform this and subsequent manipulations - this helps to avoid accidentally building in distortions which will degrade our efforts later.       
 . We're now going to use our first *modifier* - with the mouth plane selected in object mode, click on the icon that looks like a _wrench_ or _spanner_ in the properties window: image:blender-modifier-properties-icon.png[].
 +
 You'll see an empty modifier properties panel for the plane.
@@ -195,6 +196,7 @@ As soon as you selected *Mirror* a mirror properties pane appeared in the proper
 [#img-blender-character-mouth-mirrored]
 .Working on the mouth shape with mirroring
 image::blender-character-mouth-mirrored.png[]
+
 . Check the *Clipping* checkbox in the mirror properties pane - this essentially means that once the two sides of a mirrored object 'touch' in the middle, they will stick together. Try this by using *G* *X* to move the right half of the mouth towards the left, so that they might overlap by a small amount. Click when they overlap - and now, when you try to move them apart again with *G* *X*, you'll see that they're joined together.
 . Hit *S* *Z* to make the mouth flatter, then (in edit mode) select the two rightmost vertices and hit *R* to rotate the side of the mouth upwards. Use *G* *X* to bring the edges of the mouth in if they are a little too far apart.
 +
@@ -225,4 +227,13 @@ In the screenshot, you can see a new edge - the second from the left - and where
 [#img-blender-character-mouth-extrude-backwards]
 .Extruding the whole mouth backwards
 image::blender-character-mouth-extrude-backwards.png[]
+. In the modifier pane, with the mouth selected in edit mode (hit *A* to select everything), and add a *Subdivision Surface* modifier. This has the effect of adding further geometry to the mouth, smoothing things over.
+. Hit *TAB* to go back to object mode, select the mouth and right-click to choose *Shade Smooth*, just like all the other parts of our character.
 +
+In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times. It's easy to delete the mouth and start again.
++
+Here's mine, with a few adjustments.
++
+[#img-blender-character-mouth-complete]
+.The finished mouth
+image::blender-character-mouth-complete.png[]
