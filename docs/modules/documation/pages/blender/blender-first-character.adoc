@@ -171,7 +171,7 @@ Our character is looking a bit blank - let's give him/her some eyes and a mouth,
 image::blender-character-eye-iris.png[]
 . Rotate the eye so that the iris is in a better orientation - hit *R* to rotate, *X* to nominate the X-axis and then type *90* to specify a 90 degree rotation. Note how it's possible to specify a specific angle of rotation - it's only possible when the context is right, but it works with *G* and *S* as well as *R*, with suitable units.
 . Scale the sphere, and move it to where our character will need an eye - use our usual techniques in object mode.
-. *SHIFT D* *X* to duplicate it and move it to the right position for the other eye.
+. *SHIFT D* *X* to duplicate it and move it to the correct and symmetrical position for the other eye.
 +
 [#img-blender-character-with-eyes]
 .A full complement of eyes
@@ -183,4 +183,21 @@ image::blender-character-with-eyes.png[]
 +
 [#img-blender-character-mouth-in-progress]
 .The first stages of building a mouth
-image::blender-character-mouth-in-progress.png[
+image::blender-character-mouth-in-progress.png[]
+. We're now going to use our first *modifier* - with the mouth plane selected in object mode, click on the icon that looks like a _wrench_ or _spanner_ in the properties window: image:blender-modifier-properties-icon.png[].
++
+You'll see an empty modifier properties panel for the plane.
+. Click on *Add Modifier* and you'll see that there are very many to choose from. For now, we need to choose *Mirror*.
++
+As soon as you selected *Mirror* a mirror properties pane appeared in the properties window. 
+. Select the mouth, go into edit mode and use *G* *X*, moving the mouse to the right. You'll see a mirrored version of the mouth move in the opposite direction - mirroring operations are with respect to the original origin of the object.
++
+[#img-blender-character-mouth-mirrored]
+.Working on the mouth shape with mirroring
+image::blender-character-mouth-mirrored.png[]
+. Check the *Clipping* checkbox in the mirror properties pane - this essentially means that once the two sides of a mirrored object 'touch' in the middle, they will stick together. Try this by using *G* *X* to move the right half of the mouth towards the left, so that they might overlap by a small amount. Click when they overlap - and now, when you try to move them apart again with *G* *X*, you'll see that they're joined together.
+. Hit *S* *Z* to make the mouth flatter, then (in edit mode) select the two rightmost vertices and hit *R* to rotate the side of the mouth upwards. Use *G* *X* to bring the edges of the mouth in if they are a little too far apart.
++
+[#img-blender-character-mouth-rotate-edges]
+.Our character's mouth with both mirrored sides 'clipped' together and the edges rotated slightly
+image::blender-character-mouth-rotate-edges.png[]
