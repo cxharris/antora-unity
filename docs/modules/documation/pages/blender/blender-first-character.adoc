@@ -227,12 +227,14 @@ In the screenshot, you can see a new edge - the second from the left - and where
 [#img-blender-character-mouth-extrude-backwards]
 .Extruding the whole mouth backwards
 image::blender-character-mouth-extrude-backwards.png[]
-. In the modifier pane, with the mouth selected in edit mode (hit *A* to select everything), and add a *Subdivision Surface* modifier. This has the effect of adding further geometry to the mouth, smoothing things over.
+. In the modifier pane, with the mouth selected in edit mode (hit *A* to select everything), and add a *Subdivision Surface* modifier. This has the effect of adding further geometry to the mouth, smoothing things over. It's a very frequently-used modifier and is often used to create smooth, organic shapes from roughed-out geometry. Naturally, there is a _lot_ more to cover with subdivision surfaces - the offical Blender manual is a good place to explore: https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html
++
+In the *Subdivision* pane in the properties window, the *Levels Viewport* slot contains a number - the higher the number, the more geometry is added by the modifier, but so does the resource usage get greater. Setting it to 2 is a decent compromise for our exercise.  
 . Hit *TAB* to go back to object mode, select the mouth and right-click to choose *Shade Smooth*, just like all the other parts of our character.
 +
 In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times. It's easy to delete the mouth and start again.
 +
-Here's mine, with a few adjustments.
+Here's mine, with a few adjustments, and *Levels Viewport* set to 2.
 +
 [#img-blender-character-mouth-complete]
 .The finished mouth
