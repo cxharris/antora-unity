@@ -1,0 +1,26 @@
+= Animating our character
+:navtitle: Animating our character
+
+We're going to use our timeline to create some *keyframes* so prepare for this by grabbing its upper border and making it a much taller window - say, one third the height of your screen.
+
+Our timeline is basically composed of frames, and they go all the way up to 250, which is about 10 seconds of animation. As you asked, an animation is 24 frames per second. You can easily see this if you click on the *output properties* icon in the properties window: image:blender-output-properties-icon.png[].
+*
+Use *SPACEBAR* to play an animation in the timeline window, and *SHIFT LEFT ARROW* to reset the animation frame back to zero. You can even 'play' an animation that doesn't have any keyframes - the frame indicator simply scrubs across the top from frame 0 to frame 250, whereupon it resets to 0.
+
+== Adding keyframes
+. Move the frame indicator so that *frame 1* is the currently selected frame.
+. In the 3D view, *shift-select* both arms and both legs, then hit *i*, which brings up the *insert keyframe* menu, from which you should choose *Location, Rotation & Scale*. 
++
+As the menu option implies, this inserts a keyframe at frame 0 that corresponds to the location, rotation and scale states of all of our selected objects - in our case, our character's arms and legs. 
++
+In the timeline view, you can see the keyframe as an orange diamond-shaped pip. And because we selected multiple objects, we created multiple keyframes - in fact, for each object, we created keyframes for location, rotation and scale - and if you expand the items listed in your timeline view, you'll see that this makes things a little intimidating! 
+. Move to frame *5* and hit *NUMPAD 3* to go into *side view*.
+. Select the nearest arm, hit *R* and rotate it backwards aout 40 degrees on the X-axis. Type *n* to bring up transform panel and you can type *40* in the *Rotation* > *X* slot if you wish, to make it exact.
+. Select the nearest leg, hit *R* and rotate it forwards about -20 degrees on the X-axis. Just like above, you can type *n* and then type *-20* in the relevant field if you like.
+. Hit *NUMPAD CTRL 3* to flip to the 'other' side view, and repeat the above two steps, but this time rotate the arm *forwards* -40 degrees, and the leg *backwards* 20 degrees. 
++
+Back in perspective view, our character has struck a pose like this:
++
+[#img-blender-first-pose]
+.Our character's first animation pose
+image::blender-animate-character-first-pose.png[]

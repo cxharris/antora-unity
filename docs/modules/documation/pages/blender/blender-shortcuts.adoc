@@ -5,7 +5,7 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 
 [cols="1,1,1,1"]
 |===
-| Shortcut | Meaning | Notes | mode
+| Shortcut | Meaning | Notes | Window/Mode
 
 | A        | Select All | selects all components of an object when perhaps just one component (e.g. a vertex) might be selected | Edit
 | ALT - A  | Deselect All | In edit mode, deselects the entirety of a selected object. | Edit
@@ -19,6 +19,8 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 | R        | Rotate    | Rotate a currently-selected entity about the 3D cursor (... possibly other options) | Object or edit
 | SCROLL WHEEL | Zoom  | Zoom into or out of the scene | Object or edit
 | SHIFT - A | Add | Opens the *Add* menu | Object
+| SHIFT - LEFT ARROW | Reset animation | Reset current animation frame to zero | Timeline window
 | SHIFT - MIDDLE MOUSE | Pan | Pan around a scene | Object or edit
+| SPACEBAR | Play | Play an animation | Timeline window
 | Z | Visual Mode | Allows flipping between wireframe, solid, material preview or rendered modes | Object or edit
 |=== 
