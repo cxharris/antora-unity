@@ -16,6 +16,7 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 | G        | Grab    | Grab/move a currently-selected entity. | Object or edit
 | G - X,Y,Z | Constrained grab | Constrain the grab to make the object move on the X, Y or Z axes respectively. Hitting SHIFT as well makes the move happen in smaller increments. | Object or edit - in edit mode, pivot is independent
 | MIDDLE MOUSE | Tumble | Tumble around a scene | Object or edit
+| NUMPAD 0 | Camera view | Presents a view through the camera | Object or edit
 | R        | Rotate    | Rotate a currently-selected entity about the 3D cursor (... possibly other options) | Object or edit
 | SCROLL WHEEL | Zoom  | Zoom into or out of the scene | Object or edit
 | SHIFT - A | Add | Opens the *Add* menu | Object
