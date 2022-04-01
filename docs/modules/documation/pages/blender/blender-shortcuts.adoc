@@ -25,3 +25,5 @@ An in-progress list of all the keyboard shortcuts we've encountered.
 | SPACEBAR | Play | Play an animation | Timeline window
 | Z | Visual Mode | Allows flipping between wireframe, solid, material preview or rendered modes | Object or edit
 |=== 
+
+There's a really complete set of keybindings here: https://www.katsbits.com/tutorials/blender/useful-keyboard-shortcuts.php
