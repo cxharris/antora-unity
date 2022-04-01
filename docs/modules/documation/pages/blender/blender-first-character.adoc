@@ -222,7 +222,7 @@ image::blender-character-mouth-loopcut.png[]
 +
 In the screenshot, you can see a new edge - the second from the left - and where the selected vertex has been dropped just a little to add more definition to the mouth.
 . Lift the lower vertex that's second from the right a little - select, *G* *Z* and mouse.
-. Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - to make it a 3D mouth instead of a planar figure.
+. Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - maing it a 3D mouth instead of a planar figure, using Blender's *extrude* capability.
 +
 [#img-blender-character-mouth-extrude-backwards]
 .Extruding the whole mouth backwards
