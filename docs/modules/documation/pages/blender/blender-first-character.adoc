@@ -236,12 +236,15 @@ We've not dealt with loop cuts before, but they create a loop of one or more edg
 image::blender-character-mouth-loopcut.png[]
 +
 In the screenshot, you can see a new edge - the second from the left - this is the edge created by our loop cut.
-. Adjust the vertices along the Z and X axesa to give a more pleasing, gradual evolution of the rough mouth shape.
+. Adjust the vertices along the Z and X axes to give a more pleasing, gradual evolution of the rough mouth shape.
 . Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - making it a 3D mouth instead of a planar figure, using Blender's *extrude* capability.
 +
 [#img-blender-character-mouth-extrude-backwards]
 .Extruding the whole mouth backwards
 image::blender-character-mouth-extrude-backwards.png[]
++
+TIP: If, like me, you've managed to make a mistake and find that not all of your mouth vertices are now in the same plane, hitting *S* then *Y* then *0* fixes this problem. Technically, we're _scaling_ everything to 0 in the Y direction, which has the effect of making the vertices coplanar. Nice!
+
 . In the modifier pane, with the mouth selected in edit mode (hit *A* to select everything), and add a *Subdivision Surface* modifier. This has the effect of adding further geometry to the mouth, smoothing things over. It's a very frequently-used modifier and is often used to create smooth, organic shapes from roughed-out geometry. Naturally, there is a _lot_ more to cover with subdivision surfaces - the offical Blender manual is a good place to explore: https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html
 +
 In the *Subdivision* pane in the properties window, the *Levels Viewport* slot contains a number - the higher the number, the more geometry is added by the modifier, but so does the resource usage get greater. Setting it to 2 is a decent compromise for our exercise.  
@@ -249,7 +252,7 @@ In the *Subdivision* pane in the properties window, the *Levels Viewport* slot c
 +
 In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times. It's easy to delete the mouth and start again.
 +
-Here's mine, with a few adjustments, and *Levels Viewport* set to 2.
+Here's mine, with a few adjustments, and *Levels Viewport* set to 2. I'm not entirely happy with it - but I'm free to adjust things until I am - I can even return to the mouth's edit mode, tweak the individual vertices and see the result in the generated subdivision surface.
 +
 [#img-blender-character-mouth-complete]
 .The finished mouth
