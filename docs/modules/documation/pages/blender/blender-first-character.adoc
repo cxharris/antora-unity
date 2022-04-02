@@ -1,7 +1,7 @@
 = Our first character animation
 :navtitle: First character
 
-Gonna be honest here, what we'll end up with half an hour's work is not going to look pretty. It'll be ugly. But remember that _the iron is forged in the _fire - we all hate being beginners, but we're actually not beginners for very long. So have hope for the wonderful journey ahead!
+Gonna be honest here, what we'll end up with half an hour's work is not going to look pretty. It'll be ugly. But remember that _the iron is forged in the fire_ - we all hate being beginners, but we're actually not beginners for very long. So have hope for the wonderful journey ahead!
 
 We'll learn some absolutely vital techniques when it comes to modeling characters - shortcuts and more learned experiences that will stand us in good stead for leveling up quickly, and eventualaly building characters that we can be proud of.
 
@@ -17,7 +17,7 @@ And did I say _shortcuts_? To be proficient at Blender is all about shortcut key
 One way to move the origin from the centre to the neckline is:
 
 * Press *NUMPAD 1* to enter *front orthographic* view - this is just to get a better view of what's going on. No need to do this when you're more practiced.
-* Hit *Tab* to take the cube into edit mode, and press *A* to select all of its parts.
+* Hit *Tab* to take the cube into *edit* mode, and press *A* to select all of its parts.
 * Hit *G* to grab it and *Z* to constrain further movement to the Z-axis.
 * Move the cube up with the mouse - you'll see that the origin point remains where it was, so you can now move the cube just enough for the origin point to be at the bottom of the cube, not the centre.
 * Hit *Tab* again to get back to object mode - you can see the origin dot at the bottom of the cube.
@@ -27,11 +27,15 @@ One way to move the origin from the centre to the neckline is:
 image::blender-relocated-origin.png[]
 +
 Note the orange dot - the origin - is at the base of the head cube, not its centre, which is where it was placed to start by default. Adjusting the cube as we did messed up its height off the ground, but don't worry, we can fix that later.
++
+The end result of doing this is that from now on, rotations of the head are with respect to the base of the head - our new origin - which provides us with potential for a more realistic nodding-of-the-head animation, should we want one! It will take some time, but we will eventually be glad we did this.
++
+Remember, to get out of *front orthographic view* you can simply _tumble_ by hitting your middle mouse button and moving the mouse.
 
 === Creating the body
 . Hit *SHIFT - A* and choose *Mesh* > *Cube* to create a second cube at the world origin.
 . Hit *G* and *Z* to bring the cube up to touch the head/first cube.
-. Hit *S* to scale it down a little bit.
+. Hit *S* and move the mouse to scale it down a little bit.
 . Then *S* and *Z* to scale it down vertically a bit more, then *G* and *Z* to once more bring it into contact with the head.
 +
 [#img-blender-character-body]
@@ -41,12 +45,14 @@ image::blender-character-body.png[]
 We will make further adjustments to this body when we've seen how the character's arms match up to it.
 
 === Modeling the arms
-. Let's start with another cube - but this time, instead of simply creating it, we'll duplicate the one we already have by selecting the body and hitting *SHIFT - D*. This is sometimes a little easier in *front orthographic* view - *NUMPAD 1*.
+. Let's start with another cube - but this time, instead of simply creating it, we'll duplicate the one we already have by selecting the body and hitting *SHIFT - D* (while in object mode). This is sometimes a little easier in *front orthographic* view - *NUMPAD 1*.
 . Press *G* then *X* to bring the new arm out, so that it is next to the body, with a small gap.
 . Press *S* and *X* to scale it on the X-axis, then *G* and *X* again to bring it back close to the body.
 . In *right orthographic* view - *NUMPAD 3* - p ress *S* and *Y* to scale it on the Y-axis, to make it more like an arm - a narrow square column rather than the wider body.
 . Press *G* and *Z* to bring it down a fraction.
 . Fix the arm's pivot point so that it lies at the top, by entering edit mode, and using *G* *Z* to move the arm until the pivot point is correct. Finally, go back into object mode and use *G* *Z* again if necessary to bring it back up.
++
+With the pivot point at the top of the arm, this leads to a more natural swinging-from-the-shoulder animation.
 . In object mode, select the body and press *S* *Z* and make it a little longer - so that it's, say, one and a half arm lengths long, adjusting the position of the body with *G* *Z* so that it once again just contacts the head. 
 . In object mode, hit *NUMPAD 1* to get back into *front orthographic* view, select the arm and press *SHIFT - D* and *X* to duplicate and move it to the corresponding position on the other side of the body.
 +
@@ -96,7 +102,7 @@ image::blender-character-all-beveled.png[]
 .Our final, smooth-shaded charcter
 image::blender-smooth-shaded-character.png[]
 
-As I said at the beginning, it's a little ugly but it's given us practice in building these kinds of models - and in fact, we should all feel confident that we could build many more similar models. Things won't begin to seem to tie together, however, until we understand how to _colour_ our models.
+As I said at the beginning, it's a little ugly but it's given us the vital experience of building a first model - and in fact, we should all feel confident that we could build many more similar models. Things won't begin to seem to tie together, however, until we understand how to _colour_ our character.
 
 == Shades of grey
 Our character is a bit bland at the moment - all in grey. Let's liven him up with some colour, and this is going to lead to us starting to understand a little about materials.
@@ -114,7 +120,7 @@ The *properties window* fills with a bunch of complex-looking settings, but we'r
 The properties window contains two collapsible panels: *Preview* and *Surface* but it's *Surface* where all the action happens.
 . Observe that the *Surface* field in the *Surface* panel (ugh!) has an entry called *Principled BSDF*. If you click on it, you'll see that there are very many other options available, but a great deal of the time, *Principled BSDF* is going to be our choice, and it certainly is in this exercise.
 +
-Principled BSDF is the modern go-to material because using it, you can replicate the effects of many of those other options - it's quite a new feature (since version 2.79) and it's got the community quite excited. It's an _ubershader_ - and with a name like that, I'd just use it and move on if I were you.
+Principled BSDF is the modern go-to material because using it, you can replicate the effects of many of those other options - it's quite a new feature (since Blender version 2.79) and it's got the community quite excited. It's an _ubershader_ - and with a name like that, I'd just use it and move on if I were you.
 . The next field is *Base Color* - click in the field and choose a colour for the character's head. When you do, notice that the colour of the model in the 3D view doesn't change.
 +
 This is because our viewport is displaying in *solid* mode, whereas what we're looking for is *material preview* mode. 
@@ -130,11 +136,12 @@ Another way to get into material preview mode is simply to hit *Z* and choose yo
 
 === Adding colour to the rest of our character's parts
 . We have the head coloured, so how do we colour all the other character parts? There are two ways:
-.. You can click on an element - say an arm - and then click the *down arrow* in the properties window to browse and select the colour you want:
+.. You can click on an element - say an arm - and then click the *New* button in the properties window to create a new colour and then browse and select the colour you want:
 +
 [#img-blender-choose-material]
 .Choosing a material to apply to another component
 image:blender-choose-material.png[]
+
 .. Alternatively, in object mode, you can box-select everything except the head, then *SHIFT CLICK* to select the head (notice that the last in a chain of selected objects is outlined in a lighter shade of orange), and hit *CTRL L* (link) and choose *Link Materials* - the head colour is propagated to all the other parts.
 +
 Notice also that in the *properties window* next to the name of the material is the number *6*. This means that the material is applied to six different 'users' or objects. If we changed the base colour, you would see that the colour of all objects changed, because of the linking. 
@@ -145,12 +152,12 @@ But what if in a scene with linked objects, we only want to change the colour of
 .Changing just the colour of our character's head
 image::blender-changing-head-colour.png[]
 +
-Now that we understand how to do this, let's revert back so that all of our character's parts are coloured the same - I guess multiple *CTRL Z*s will do, but be sure to stop at the right place!
+Now that we understand how to do this, let's revert back so that all of our character's parts are coloured the same - one or two clicks of *CTRL Z* will do the trick, but be sure to stop at the right place!
 
 === Adding a floor for our character to stand on
 Let's add a plane to create the illusion that our character is standing on the floor.
 
-. Press *SHIFT A* and choose *Mesh* > *Plane*.
+. In object mode, press *SHIFT A* and choose *Mesh* > *Plane*.
 . Scale the plane in the *X* and *Y* directions to make it bigger - use techniques that you've already learned: *S* *X* and *S* *Y*.
 . Move the plane in the *Z* direction using *G* *Z* and the mouse - position the plane just underneath our character's legs/feet. It's easier to do this in an orthographic view - use, say, *NUMPAD 1* to get there.
 +
@@ -160,6 +167,8 @@ image::blender-character-standing-on-plane.png[]
 
 == Facial features
 Our character is looking a bit blank - let's give him/her some eyes and a mouth, and learn a couple of new Blender techniques as we go.
++
+Let's go back into *solid mode* (hit *Z* and choose *Solid*) so that we're not distracted by all the colours.
 
 === The eyes have it
 . *SHIFT A* and *Mesh* > *UV Sphere* creates a sphere - use *G* *Z* to bring it up above the surface of our ground plane. It is, however, a bit big - too big for one of our character's eyes.
@@ -169,7 +178,7 @@ Our character is looking a bit blank - let's give him/her some eyes and a mouth,
 [#img-blender-character-eye-iris]
 .A UV sphere looks eerily like an eye pointing upwards
 image::blender-character-eye-iris.png[]
-. Rotate the eye so that the iris is in a better orientation - hit *R* to rotate, *X* to nominate the X-axis and then type *90* to specify a 90 degree rotation. Note how it's possible to specify a specific angle of rotation - it's only possible when the context is right, but it works with *G* and *S* as well as *R*, with suitable units.
+. Rotate the eye so that the iris is in a better orientation - hit *R* to rotate, *X* to nominate the X-axis and then type *90* to specify a 90 degree rotation - remember to left-click at the end to confirm the rotation. Note how it's possible to specify a specific angle (90 degrees here) of rotation - it's only possible when the context is right, but analagous commands work    with *G* and *S* as well as *R*, with suitable units.
 . Scale the sphere, and move it to where our character will need an eye - use our usual techniques in object mode.
 . *SHIFT D* *X* to duplicate it and move it to the correct and symmetrical position for the other eye.
 +
@@ -179,7 +188,7 @@ image::blender-character-with-eyes.png[]
 
 === Adding a mouth
 . Start the mouth off by pressing *SHIFT A* > *Mesh* > *Plane*.
-. *G* *Z* to move the plain up roughly to mouth level, then *R* *X* *90* to rotate it 90 degrees, and finally *G* *Y* to bring the plane forward to the front of the head where it can be seen. Scale it with *S* and adjust.
+. *G* *Z* to move the plain up roughly to mouth level, then *R* *X* *90* to rotate it 90 degrees, and finally *G* *Y* to bring the plane forward to the front of the head where it can be seen. Scale it with *S* and adjust using techniques we've already learned.
 +
 [#img-blender-character-mouth-in-progress]
 .The first stages of building a mouth
@@ -191,7 +200,7 @@ You'll see an empty modifier properties panel for the plane.
 . Click on *Add Modifier* and you'll see that there are very many to choose from. For now, we need to choose *Mirror*.
 +
 As soon as you selected *Mirror* a mirror properties pane appeared in the properties window. 
-. Select the mouth, go into edit mode and use *G* *X*, moving the mouse to the right. You'll see a mirrored version of the mouth move in the opposite direction - mirroring operations are with respect to the original origin of the object.
+. Select the mouth, go into edit mode and use *G* *X*, moving the mouse to the right and then left-clicking to confirm. You'll see a mirrored version of the mouth move in the opposite direction - mirroring operations are with respect to the original origin of the object.
 +
 [#img-blender-character-mouth-mirrored]
 .Working on the mouth shape with mirroring
