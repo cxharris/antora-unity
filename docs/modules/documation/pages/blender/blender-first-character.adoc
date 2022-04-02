@@ -207,30 +207,35 @@ As soon as you selected *Mirror* a mirror properties pane appeared in the proper
 image::blender-character-mouth-mirrored.png[]
 
 . Check the *Clipping* checkbox in the mirror properties pane - this essentially means that once the two sides of a mirrored object 'touch' in the middle, they will stick together. Try this by using *G* *X* to move the right half of the mouth towards the left, so that they might overlap by a small amount. Click when they overlap - and now, when you try to move them apart again with *G* *X*, you'll see that they're joined together.
-. Hit *S* *Z* to make the mouth flatter, then (in edit mode) select the two rightmost vertices and hit *R* to rotate the side of the mouth upwards. Use *G* *X* to bring the edges of the mouth in if they are a little too far apart.
+. Hit *S* *Z* to make the mouth flatter - and *S* *X* to make it narrower if necessary, then (in edit mode) select the two rightmost vertices and hit *R* to rotate the side of the mouth upwards. Use *G* *X* to bring the edges of the mouth in if they are a little too far apart.
 +
 [#img-blender-character-mouth-rotate-edges]
 .Our character's mouth with both mirrored sides 'clipped' together and the edges rotated slightly
 image::blender-character-mouth-rotate-edges.png[]
-. Use *G* *Z* on the same two rightmost vertices to lift them up a little.
-. With those same two vertices selected in edit mode, hit *E*e to extrude a rectangle and left-click.
+. In edit mode for the mouth, use *G* *Z* on the same two rightmost vertices to lift them up a little.
+. With those same two vertices selected in edit mode, hit *E* to extrude a rectangle and left-click.
 +
 [#img-blender-character-mouth-extrude]
 .Working on the mouth shape by extruding the terminal vertices
 image::blender-character-mouth-extrude.png[]
-. Now hit *R* to rotate a few degrees as before.
+. Now hit *R* to rotate a few degrees as before, and left-click as usual to confirm.
 +
 [#img-blender-character-mouth-2ndrotate]
 .Working on the mouth with more rotating
 image::blender-character-mouth-2ndrotate.png[]
-. Hit *CTRL R* to create a *loop cut*, and then move the topmost of the two new vertices down a little. We've not dealt with loop cuts before, but it creates a loop of one or more edges along a ring of quad faces. In our case, our 'ring' of quad faces is a single quad, and so the result is more geometry in the mouth, allowing us to shape it more delicately.
+. Hit *CTRL R* to create a *loop cut* - as you move the mouse, you'll see a yellow line indicating where the cut will be. Move the mouse until it's in the same position as shown in the image, and then left-click and *right-click* to confirm.
+[#img-blender-character-mouth-loopcut-in-progress]
+.The loopcut indicator flips between all legal positions
+image::blender-character-mouth-loopcut-in-progress.png[]
++
+We've not dealt with loop cuts before, but they create a loop of one or more edges along a ring of quad faces. In our case, our 'ring' of quad faces is a single quad, and so here the result is a little more geometry in the mouth, which will allow us to shape it in a little more detail.
 +
 [#img-blender-character-mouth-loopcut]
 .Working on the mouth with a loop cut
 image::blender-character-mouth-loopcut.png[]
 +
-In the screenshot, you can see a new edge - the second from the left - and where the selected vertex has been dropped just a little to add more definition to the mouth.
-. Lift the lower vertex that's second from the right a little - select, *G* *Z* and mouse.
+In the screenshot, you can see a new edge - the second from the left - this is a new edge created by our loop cut.
+. Adjust the vertices along the Z and X axes to give a more pleasing, gradual evolution of the rough mouth shape.
 . Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - maing it a 3D mouth instead of a planar figure, using Blender's *extrude* capability.
 +
 [#img-blender-character-mouth-extrude-backwards]
