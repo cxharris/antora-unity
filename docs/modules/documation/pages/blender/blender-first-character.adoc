@@ -224,6 +224,7 @@ image::blender-character-mouth-extrude.png[]
 .Working on the mouth with more rotating
 image::blender-character-mouth-2ndrotate.png[]
 . Hit *CTRL R* to create a *loop cut* - as you move the mouse, you'll see a yellow line indicating where the cut will be. Move the mouse until it's in the same position as shown in the image, and then left-click and *right-click* to confirm.
++
 [#img-blender-character-mouth-loopcut-in-progress]
 .The loopcut indicator flips between all legal positions
 image::blender-character-mouth-loopcut-in-progress.png[]
@@ -234,9 +235,9 @@ We've not dealt with loop cuts before, but they create a loop of one or more edg
 .Working on the mouth with a loop cut
 image::blender-character-mouth-loopcut.png[]
 +
-In the screenshot, you can see a new edge - the second from the left - this is a new edge created by our loop cut.
-. Adjust the vertices along the Z and X axes to give a more pleasing, gradual evolution of the rough mouth shape.
-. Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - maing it a 3D mouth instead of a planar figure, using Blender's *extrude* capability.
+In the screenshot, you can see a new edge - the second from the left - this is the edge created by our loop cut.
+. Adjust the vertices along the Z and X axesa to give a more pleasing, gradual evolution of the rough mouth shape.
+. Still in edit mode, hit *A* to select everything that belongs to the mouth, then *E* *Y* and move the mouse to give it some depth - making it a 3D mouth instead of a planar figure, using Blender's *extrude* capability.
 +
 [#img-blender-character-mouth-extrude-backwards]
 .Extruding the whole mouth backwards
