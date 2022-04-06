@@ -252,7 +252,7 @@ In the *Subdivision* pane in the properties window, the *Levels Viewport* slot c
 +
 In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times. It's easy to delete the mouth and start again.
 +
-Here's mine, with a few adjustments, and *Levels Viewport* set to 2. I'm not entirely happy with it - but I'm free to adjust things until I am - I can even return to the mouth's edit mode, tweak the individual vertices and see the result in the generated subdivision surface.
+Here's mine, with *Levels Viewport* set to 2. I'm not entirely happy with it - but I'm free to adjust things until I am - I can even return to the mouth's edit mode, tweak the individual vertices and see the result in the generated subdivision surface.
 +
 [#img-blender-character-mouth-complete]
 .The finished mouth
