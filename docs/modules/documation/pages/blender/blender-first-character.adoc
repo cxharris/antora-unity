@@ -167,7 +167,7 @@ image::blender-character-standing-on-plane.png[]
 
 == Facial features
 Our character is looking a bit blank - let's give him/her some eyes and a mouth, and learn a couple of new Blender techniques as we go.
-+
+
 Let's go back into *solid mode* (hit *Z* and choose *Solid*) so that we're not distracted by all the colours.
 
 === The eyes have it
@@ -250,10 +250,19 @@ TIP: If, like me, you've managed to make a mistake and find that not all of your
 In the *Subdivision* pane in the properties window, the *Levels Viewport* slot contains a number - the higher the number, the more geometry is added by the modifier, but so does the resource usage get greater. Setting it to 2 is a decent compromise for our exercise.  
 . Hit *TAB* to go back to object mode, select the mouth and right-click to choose *Shade Smooth*, just like all the other parts of our character.
 +
-In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times. It's easy to delete the mouth and start again.
+In fairness, it takes a few attempts to get a decent result, so don't be concerned if you mess it up the first few times as you become familiar with all this. It's easy to delete the mouth and start again.
 +
 Here's mine, with *Levels Viewport* set to 2. I'm not entirely happy with it - but I'm free to adjust things until I am - I can even return to the mouth's edit mode, tweak the individual vertices and see the result in the generated subdivision surface.
 +
 [#img-blender-character-mouth-complete]
 .The finished mouth
 image::blender-character-mouth-complete.png[]
+
+== It's a wrap!
+We've completed our first model - at least the 'modeling' part of it. 
+
+[#img-blender-first-character-finished]
+.Well, hello there!
+image::blender-first-character-finished.png[]
+
+Next up is _animating_ our character.
